@@ -96,7 +96,6 @@
 }
 
 @utility link-underline {
-  color: var(--color-foreground);
   transition:
     color 200ms ease,
     opacity 200ms ease;
