@@ -78,7 +78,7 @@ function Index() {
     <div className="min-h-screen">
       <header className="border-b border-border">
         <div className="container-editorial flex flex-wrap items-center justify-between gap-3 py-6">
-          <span className="text-[15px] font-bold tracking-[-0.02em]">Adriane Rodrigues</span>
+          <span className="font-serif text-[17px] font-normal tracking-normal">Adriane Rodrigues</span>
           <nav className="flex items-center gap-6 text-[14px] text-muted-foreground">
             <a
               className="link-underline"
@@ -100,7 +100,7 @@ function Index() {
 
       <main>
         <section className="container-editorial section-y">
-          <h1 className="max-w-[20ch] text-[30px] leading-[1.15] sm:text-[36px]">
+          <h1 className="max-w-[20ch] text-[32px] leading-[1.12] sm:text-[40px]">
             Cross-functional operations leader bridging law, tech execution, and business systems.
           </h1>
           <p className="mt-8 max-w-[62ch] text-[17px] leading-[1.75] text-muted-foreground">
@@ -126,7 +126,7 @@ function Index() {
                 >
                   <span className="text-[13px] font-medium text-accent">{item.n} /</span>
                   <div>
-                    <h3 className="text-[18px] font-bold">{item.title}</h3>
+                    <h3 className="text-[19px]">{item.title}</h3>
                     <p className="mt-2 max-w-[58ch] text-[15px] leading-[1.7] text-muted-foreground">
                       {item.body}
                     </p>
@@ -146,7 +146,7 @@ function Index() {
                   key={p.title}
                   className="border-t border-border py-8 transition-colors hover:bg-panel"
                 >
-                  <h3 className="text-[18px] font-bold">{p.title}</h3>
+                  <h3 className="text-[19px]">{p.title}</h3>
                   <p className="mt-2 max-w-[58ch] text-[15px] leading-[1.7] text-muted-foreground">
                     {p.body}
                   </p>
@@ -162,7 +162,7 @@ function Index() {
             <ul>
               {background.map((b) => (
                 <li key={b.degree} className="border-t border-border py-8">
-                  <h3 className="text-[18px] font-bold">{b.degree}</h3>
+                  <h3 className="text-[19px]">{b.degree}</h3>
                   <p className="mt-2 text-[15px] leading-[1.7] text-muted-foreground">{b.place}</p>
                 </li>
               ))}
