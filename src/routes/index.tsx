@@ -108,15 +108,27 @@ function Index() {
       </header>
 
       <main>
-        <section className="container-editorial section-y">
-          <h1 className="max-w-[20ch] text-[32px] leading-[1.12] sm:text-[40px]">
-            Cross-functional operations leader bridging law, tech execution, and business systems.
-          </h1>
-          <p className="mt-8 max-w-[62ch] text-[17px] leading-[1.75] text-muted-foreground">
-            Currently running operations at Deemaze Software in Portugal. Specialized in contract
-            lifecycles, public grant governance, HR frameworks, and pragmatic workflow automation.
-          </p>
+        <section className="relative">
+          <HeroCollage className="pointer-events-none absolute right-0 top-6 hidden h-[300px] w-[340px] lg:block" />
+          <BlobCutout className="pointer-events-none absolute -left-24 -top-16 h-[280px] w-[280px] text-clay/25" />
+          <div className="container-editorial section-y relative">
+            <p className="meta-label mb-6">Operations · Legal · Process design</p>
+            <h1 className="max-w-[20ch] text-[34px] leading-[1.06] sm:text-[46px]">
+              Cross-functional operations leader bridging{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10">law</span>
+                <span className="absolute inset-x-[-4px] bottom-[0.1em] z-0 h-[0.36em] -rotate-1 bg-ochre/55" />
+              </span>
+              , tech execution, and business systems.
+            </h1>
+            <WaveRule className="mt-8 h-3 w-[220px] text-accent/70" />
+            <p className="mt-6 max-w-[62ch] text-[17px] leading-[1.75] text-muted-foreground">
+              Currently running operations at Deemaze Software in Portugal. Specialized in contract
+              lifecycles, public grant governance, HR frameworks, and pragmatic workflow automation.
+            </p>
+          </div>
         </section>
+
 
         <section className="border-t border-border">
           <div className="container-editorial section-y">
