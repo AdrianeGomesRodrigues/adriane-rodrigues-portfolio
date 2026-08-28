@@ -70,15 +70,24 @@ const background = [
 ];
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className="meta-label mb-10 font-medium">{children}</h2>;
+  return (
+    <h2 className="mb-10 flex items-center gap-3">
+      <SectionMark className="h-3.5 w-3.5 shrink-0 text-accent" />
+      <span className="meta-label font-medium">{children}</span>
+    </h2>
+  );
 }
 
 function Index() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-clip">
       <header className="border-b border-border">
         <div className="container-editorial flex flex-wrap items-center justify-between gap-3 py-6">
-          <span className="font-serif text-[17px] font-normal tracking-normal">Adriane Rodrigues</span>
+          <span className="flex items-center gap-2.5 font-display text-[17px] font-semibold tracking-tight">
+            <LeafCutout className="h-5 w-3 shrink-0 text-accent" />
+            Adriane Rodrigues
+          </span>
+
           <nav className="flex items-center gap-6 text-[14px] text-muted-foreground">
             <a
               className="link-underline"
