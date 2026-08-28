@@ -33,14 +33,14 @@
 
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.196 0.006 60);
-  --foreground: oklch(0.936 0.011 84);
-  --panel: oklch(0.232 0.006 60);
-  --muted-foreground: oklch(0.673 0.017 72);
-  --accent: oklch(0.583 0.144 43);
-  --primary: oklch(0.583 0.144 43);
-  --primary-foreground: oklch(0.96 0.008 84);
-  --border: oklch(0.259 0.006 60);
+  --background: oklch(0.1875 0.0026 67.67); /* #141312 */
+  --foreground: oklch(0.9437 0.0086 84.57); /* #EFECE6 */
+  --panel: oklch(0.224 0.0037 48.55); /* #1D1B1A */
+  --muted-foreground: oklch(0.6773 0.0161 70.8); /* #9E968D */
+  --accent: oklch(0.5987 0.1506 39.72); /* #C85A32 */
+  --primary: oklch(0.5987 0.1506 39.72);
+  --primary-foreground: oklch(0.9437 0.0086 84.57);
+  --border: oklch(0.2752 0.0058 56.15); /* #2A2725 */
 }
 
 @layer base {
