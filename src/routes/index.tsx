@@ -70,15 +70,24 @@ const background = [
 ];
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className="meta-label mb-10 font-medium">{children}</h2>;
+  return (
+    <h2 className="mb-10 flex items-center gap-3">
+      <SectionMark className="h-3.5 w-3.5 shrink-0 text-accent" />
+      <span className="meta-label font-medium">{children}</span>
+    </h2>
+  );
 }
 
 function Index() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-clip">
       <header className="border-b border-border">
         <div className="container-editorial flex flex-wrap items-center justify-between gap-3 py-6">
-          <span className="font-serif text-[17px] font-normal tracking-normal">Adriane Rodrigues</span>
+          <span className="flex items-center gap-2.5 font-display text-[17px] font-semibold tracking-tight">
+            <LeafCutout className="h-5 w-3 shrink-0 text-accent" />
+            Adriane Rodrigues
+          </span>
+
           <nav className="flex items-center gap-6 text-[14px] text-muted-foreground">
             <a
               className="link-underline"
@@ -99,15 +108,27 @@ function Index() {
       </header>
 
       <main>
-        <section className="container-editorial section-y">
-          <h1 className="max-w-[20ch] text-[32px] leading-[1.12] sm:text-[40px]">
-            Cross-functional operations leader bridging law, tech execution, and business systems.
-          </h1>
-          <p className="mt-8 max-w-[62ch] text-[17px] leading-[1.75] text-muted-foreground">
-            Currently running operations at Deemaze Software in Portugal. Specialized in contract
-            lifecycles, public grant governance, HR frameworks, and pragmatic workflow automation.
-          </p>
+        <section className="relative">
+          <HeroCollage className="pointer-events-none absolute right-0 top-6 hidden h-[300px] w-[340px] lg:block" />
+          <BlobCutout className="pointer-events-none absolute -left-24 -top-16 h-[280px] w-[280px] text-clay/25" />
+          <div className="container-editorial section-y relative">
+            <p className="meta-label mb-6">Operations · Legal · Process design</p>
+            <h1 className="max-w-[20ch] text-[34px] leading-[1.06] sm:text-[46px]">
+              Cross-functional operations leader bridging{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10">law</span>
+                <span className="absolute inset-x-[-4px] bottom-[0.1em] z-0 h-[0.36em] -rotate-1 bg-ochre/55" />
+              </span>
+              , tech execution, and business systems.
+            </h1>
+            <WaveRule className="mt-8 h-3 w-[220px] text-accent/70" />
+            <p className="mt-6 max-w-[62ch] text-[17px] leading-[1.75] text-muted-foreground">
+              Currently running operations at Deemaze Software in Portugal. Specialized in contract
+              lifecycles, public grant governance, HR frameworks, and pragmatic workflow automation.
+            </p>
+          </div>
         </section>
+
 
         <section className="border-t border-border">
           <div className="container-editorial section-y">

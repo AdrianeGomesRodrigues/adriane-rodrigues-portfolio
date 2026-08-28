@@ -9,7 +9,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --font-sans: "Work Sans", ui-sans-serif, sans-serif;
-  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, sans-serif;
+  --color-clay: var(--clay);
+  --color-sage: var(--sage);
+  --color-ochre: var(--ochre);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-panel: var(--panel);
@@ -46,6 +49,9 @@
   --secondary: oklch(0.7 0.06 120); /* #8A9A7A */
   --secondary-foreground: oklch(0.965 0.012 79.5);
   --border: oklch(0.88 0.016 79.5); /* #E0D8CC */
+  --clay: oklch(0.74 0.075 50); /* #D9A188 dusty clay */
+  --sage: oklch(0.7 0.055 130); /* #97A886 sage */
+  --ochre: oklch(0.78 0.115 75); /* #DDA24C ochre */
 }
 
 @layer base {
@@ -70,14 +76,15 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-serif);
-    letter-spacing: -0.01em;
-    line-height: 1.15;
-    font-weight: 400;
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    font-weight: 600;
   }
 
   h1 {
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: -0.035em;
   }
 }
 
@@ -110,4 +117,27 @@
   font-size: 0.8125rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+@utility paper-grain {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    background-image: radial-gradient(
+      color-mix(in oklab, var(--color-foreground) 14%, transparent) 0.5px,
+      transparent 0.5px
+    );
+    background-size: 4px 4px;
+  }
+}
+
+@utility display-index {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
 }
