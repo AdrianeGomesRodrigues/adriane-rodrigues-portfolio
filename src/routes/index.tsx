@@ -1,5 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import {
+  ArchCutout,
+  BlobCutout,
+  HeroCollage,
+  LeafCutout,
+  SectionMark,
+  SunCutout,
+  WaveRule,
+} from "../components/shapes";
+
+
 const TITLE = "Adriane Rodrigues — Operations, Legal & Process Design";
 const DESCRIPTION =
   "Cross-functional operations leader bridging law, tech execution, and business systems. Contract lifecycles, EU funding, HR frameworks, and workflow automation.";
