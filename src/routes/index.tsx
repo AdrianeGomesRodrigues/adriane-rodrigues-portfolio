@@ -1,15 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import {
+  ArcLines,
   ArchCutout,
   BlobCutout,
+  ContourLines,
   HeroCollage,
-  LeafCutout,
-  SectionMark,
-  SunCutout,
   WaveRule,
 } from "../components/shapes";
-
 
 const TITLE = "Adriane Rodrigues — Operations, Legal & Process Design";
 const DESCRIPTION =
@@ -20,7 +18,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
+      { property: "og:title", content: DESCRIPTION ? TITLE : TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -30,61 +28,72 @@ export const Route = createFileRoute("/")({
 });
 
 const EMAIL = "adrianegrodrigues@gmail.com";
+const LINKEDIN = "https://www.linkedin.com/in/adrianegrodrigues/";
 
-const doing = [
+const scope = [
   {
     n: "01",
-    title: "Legal & Compliance Ops",
+    title: "Legal & Regulatory",
     body: "Contract lifecycle (MSA, DPA, NDA), GDPR frameworks, and risk mitigation across engineering teams.",
   },
   {
     n: "02",
     title: "Public & EU Funding",
-    body: "End-to-end lifecycle management for PT2030, PRR, and Horizon programs (~€800K secured & managed in-house).",
+    body: "End-to-end lifecycle management for PT2030, PRR, and Horizon programs (~€800K secured and managed in-house).",
   },
   {
     n: "03",
-    title: "Finance & People Ops",
+    title: "Finance & People",
     body: "Financial administration, budget tracking, IT recruitment, and Portuguese Labour Code compliance.",
   },
   {
     n: "04",
-    title: "Process Design & AI Tooling",
+    title: "Process & Automation",
     body: "Standardizing SOPs and automating manual workflows using Claude, Make, and Google Apps Script.",
   },
 ];
 
 const projects = [
   {
+    n: "01",
     title: "Public Grant Eligibility Evaluator",
-    body: "Interactive tool mapping PT2030 & PRR criteria (Built with Claude).",
+    body: "Interactive tool mapping PT2030 & PRR criteria against company profiles.",
+    tags: ["Public funding", "Eligibility", "Claude"],
   },
   {
+    n: "02",
     title: "Legal Ops Contract Risk Matrix",
-    body: "Micro-tool for clause triage & risk scoring.",
+    body: "Micro-tool for clause triage and risk scoring before signature.",
+    tags: ["Legal ops", "Risk", "Sheets"],
   },
   {
-    title: "Case Study: In-Housing Public Grants",
-    body: "Replacing external consultants to secure €800K with 100% audit compliance.",
+    n: "03",
+    title: "In-Housing Public Grants",
+    body: "Replaced external consultants to secure €800K with 100% audit compliance.",
+    tags: ["Case study", "Governance", "Audit"],
+  },
+  {
+    n: "04",
+    title: "Hiring & Onboarding Playbook",
+    body: "One repeatable path from job brief to signed contract and first week.",
+    tags: ["People ops", "SOP", "Compliance"],
   },
 ];
 
-const background = [
+const trajectory = [
+  { period: "2016 – 2021", title: "LLB in Law", place: "University of Coimbra" },
   {
-    degree: "Master's Degree (LLM) in Business & Corporate Law",
-    place: "University of Coimbra — Thesis on Blockchain & IP",
+    period: "2021 – 2023",
+    title: "LLM, Business & Corporate Law",
+    place: "Thesis: Blockchain & Intellectual Property",
   },
-  {
-    degree: "Bachelor's Degree (LLB) in Law",
-    place: "University of Coimbra",
-  },
+  { period: "2021 – Present", title: "Operations Manager", place: "Deemaze Software" },
 ];
 
-function SectionTitle({ children }: { children: React.ReactNode }) {
+function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mb-10 flex items-center gap-3">
-      <SectionMark className="h-3.5 w-3.5 shrink-0 text-accent" />
-      <span className="meta-label font-medium">{children}</span>
+    <h2 className="mb-4">
+      <span className="meta-label font-medium text-accent">— {children}</span>
     </h2>
   );
 }
@@ -94,18 +103,13 @@ function Index() {
     <div className="min-h-screen overflow-x-clip">
       <header className="border-b border-border">
         <div className="container-editorial flex flex-wrap items-center justify-between gap-3 py-6">
-          <span className="flex items-center gap-2.5 font-display text-[17px] font-semibold tracking-tight">
-            <LeafCutout className="h-5 w-3 shrink-0 text-accent" />
+          <span className="font-display text-[17px] font-semibold tracking-tight">
+            <span className="mr-2 text-accent">—</span>
             Adriane Rodrigues
           </span>
 
           <nav className="flex items-center gap-6 text-[14px] text-muted-foreground">
-            <a
-              className="link-underline"
-              href="https://www.linkedin.com/in/adrianegrodrigues/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
             <a className="link-underline" href={`mailto:${EMAIL}`}>
@@ -119,59 +123,102 @@ function Index() {
       </header>
 
       <main>
+        {/* Hero */}
         <section className="relative">
-          <HeroCollage className="pointer-events-none absolute right-6 top-10 hidden h-[300px] w-[320px] xl:block" />
+          <HeroCollage className="pointer-events-none absolute right-4 top-14 hidden h-[280px] w-[300px] xl:block" />
           <BlobCutout className="pointer-events-none absolute -left-24 -top-16 h-[280px] w-[280px] text-clay/25" />
           <div className="container-editorial section-y relative">
-            <p className="meta-label mb-6">Operations · Legal · Process design</p>
-            <h1 className="max-w-[20ch] text-[34px] leading-[1.06] sm:text-[46px]">
-              Cross-functional operations leader bridging{" "}
+            <p className="meta-label mb-6 text-accent">— Operations leader · Law · Tech</p>
+            <h1 className="max-w-[22ch] text-[34px] leading-[1.06] sm:text-[46px]">
+              Building cross-functional systems at the intersection of{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">law</span>
                 <span className="absolute inset-x-[-4px] bottom-[0.12em] z-0 h-[0.3em] -rotate-1 bg-ochre/55" />
               </span>
-              , tech execution, and business systems.
+              , technology, and business operations.
             </h1>
-            <WaveRule className="mt-8 h-3 w-[220px] text-accent/70" />
-            <p className="mt-6 max-w-[62ch] text-[17px] leading-[1.75] text-muted-foreground">
-              Currently running operations at Deemaze Software in Portugal. Specialized in contract
-              lifecycles, public grant governance, HR frameworks, and pragmatic workflow automation.
+            <WaveRule className="mt-8 h-5 w-[220px] text-accent/70" />
+            <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.75] text-muted-foreground">
+              Running legal, finance, HR, and public funding for a software company in Portugal.
+              Picking up whatever each new domain requires, then owning it end to end.
             </p>
+            <div className="mt-10 flex flex-wrap items-center gap-3">
+              <a
+                href={`mailto:${EMAIL}`}
+                className="rounded-full bg-accent px-6 py-3 text-[14px] font-medium text-accent-foreground transition-opacity hover:opacity-90"
+              >
+                Get in touch
+              </a>
+              <a
+                href={LINKEDIN}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-border px-6 py-3 text-[14px] font-medium transition-colors hover:border-accent hover:text-accent"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
         </section>
 
-
+        {/* Scope — flip cards */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <LeafCutout className="pointer-events-none absolute -right-6 top-10 h-[190px] w-[114px] rotate-[-12deg] text-sage/45" />
+          <ArcLines className="pointer-events-none absolute -right-10 top-12 h-[120px] w-[200px] text-sage/50" />
           <div className="container-editorial section-y relative">
-            <SectionTitle>What I do</SectionTitle>
-            <p className="mb-14 max-w-[62ch] text-[17px] leading-[1.75]">
+            <SectionLabel>What I do</SectionLabel>
+            <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
+            <p className="mb-12 max-w-[58ch] text-[16px] leading-[1.75] text-muted-foreground">
               I manage the operational backbone of tech-driven companies. My background is in law
               (LLB, LLM), but my daily execution lives at the intersection of process design,
               compliance, and internal tooling.
             </p>
 
-            <ul>
-              {doing.map((item, i) => (
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group grid grid-cols-1 gap-2 border-t border-border py-8 sm:grid-cols-[64px_1fr] sm:gap-8"
+                  className="group h-[190px] [perspective:1200px]"
+                  tabIndex={0}
                 >
-                  <span className="flex items-center gap-2">
-                    <span
-                      className="inline-block h-2.5 w-2.5 shrink-0 transition-transform duration-300 group-hover:rotate-45"
-                      style={{
-                        backgroundColor: ["var(--accent)", "var(--ochre)", "var(--sage)", "var(--clay)"][i % 4],
-                        borderRadius: i % 2 === 0 ? "999px" : "2px",
-                      }}
-                    />
-                    <span className="display-index text-muted-foreground">{item.n}</span>
-                  </span>
-                  <div>
-                    <h3 className="text-[19px]">{item.title}</h3>
-                    <p className="mt-2 max-w-[58ch] text-[15px] leading-[1.7] text-muted-foreground">
-                      {item.body}
-                    </p>
+                  <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
+                    {/* front */}
+                    <div className="absolute inset-0 flex flex-col justify-between rounded-md border border-border bg-background p-6 [backface-visibility:hidden]">
+                      <span className="flex items-center gap-2.5">
+                        <span
+                          className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
+                          style={{
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--sage)", "var(--clay)"][
+                              i % 4
+                            ],
+                          }}
+                        />
+                        <span className="display-index text-muted-foreground">{item.n}</span>
+                      </span>
+                      <div>
+                        <h4 className="text-[21px]">{item.title}</h4>
+                        <p className="mt-2 text-[13px] text-muted-foreground">Hover to read more</p>
+                      </div>
+                    </div>
+                    {/* back */}
+                    <div className="absolute inset-0 flex flex-col justify-between rounded-md border border-accent/40 bg-panel p-6 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <span className="flex items-center gap-2.5">
+                        <span
+                          className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
+                          style={{
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--sage)", "var(--clay)"][
+                              i % 4
+                            ],
+                          }}
+                        />
+                        <span className="display-index text-muted-foreground">{item.n}</span>
+                      </span>
+                      <div>
+                        <h4 className="text-[17px]">{item.title}</h4>
+                        <p className="mt-2 text-[14px] leading-[1.65] text-muted-foreground">
+                          {item.body}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </li>
               ))}
@@ -179,10 +226,11 @@ function Index() {
           </div>
         </section>
 
+        {/* Projects */}
         <section className="relative border-t border-border">
-          <SunCutout className="pointer-events-none absolute -left-16 bottom-12 h-[180px] w-[180px] text-ochre/35" />
           <div className="container-editorial section-y relative">
-            <SectionTitle>Selected Projects &amp; Systems</SectionTitle>
+            <SectionLabel>Selected projects &amp; systems</SectionLabel>
+            <h3 className="mb-12 text-[26px] sm:text-[30px]">Case studies, in brief.</h3>
             <ul className="grid gap-4 sm:grid-cols-2">
               {projects.map((p, i) => (
                 <li
@@ -190,32 +238,77 @@ function Index() {
                   className="group relative overflow-hidden rounded-md border border-border bg-panel/60 p-6 transition-colors hover:border-accent/50"
                 >
                   <ArchCutout
-                    className={`pointer-events-none absolute -right-4 -top-6 h-[110px] w-[80px] transition-transform duration-500 group-hover:translate-y-1 ${
-                      ["text-clay/45", "text-sage/45", "text-ochre/45"][i % 3]
+                    className={`pointer-events-none absolute -right-2 -top-3 h-[52px] w-[38px] transition-transform duration-500 group-hover:translate-y-1 ${
+                      ["text-clay/40", "text-sage/40", "text-ochre/40", "text-accent/25"][i % 4]
                     }`}
                   />
-                  <h3 className="relative max-w-[24ch] text-[19px]">{p.title}</h3>
+                  <span className="display-index relative text-accent">{p.n}</span>
+                  <h4 className="relative mt-3 max-w-[24ch] text-[19px]">{p.title}</h4>
                   <p className="relative mt-3 max-w-[40ch] text-[15px] leading-[1.7] text-muted-foreground">
                     {p.body}
                   </p>
+                  <div className="relative mt-5 flex flex-wrap gap-2">
+                    {p.tags.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-muted-foreground"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
         </section>
 
+        {/* About */}
+        <section className="relative border-t border-border bg-panel/50 paper-grain">
+          <ContourLines className="pointer-events-none absolute -left-16 bottom-10 h-[170px] w-[170px] text-ochre/40" />
+          <div className="container-editorial section-y relative">
+            <SectionLabel>About</SectionLabel>
+            <div className="max-w-[62ch] space-y-5 text-[16px] leading-[1.8]">
+              <p>
+                Trained as a lawyer (LLB, LLM from the University of Coimbra), I moved into
+                operations because I wanted to build the systems a company runs on, not just review
+                them after the fact. Since 2021, I've run legal, finance, HR, and public funding for
+                a software company as one connected function rather than four separate jobs.
+              </p>
+              <p className="text-muted-foreground">
+                Each new domain came with its own learning curve, and I've made a habit of closing it
+                fast enough to own the work end to end. That's what replaced outside consultants on
+                public grant management, and what keeps contracts, hiring, and budgets moving without
+                the usual handoffs between departments.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Trajectory */}
         <section className="relative border-t border-border">
           <div className="container-editorial section-y">
-            <SectionTitle>Background</SectionTitle>
-            <ul>
-              {background.map((b) => (
-                <li key={b.degree} className="border-t border-border py-8">
-                  <h3 className="text-[19px]">{b.degree}</h3>
-                  <p className="mt-2 text-[15px] leading-[1.7] text-muted-foreground">{b.place}</p>
+            <SectionLabel>Trajectory</SectionLabel>
+            <h3 className="mb-12 text-[26px] sm:text-[30px]">Background, in order.</h3>
+            <ol className="grid gap-8 sm:grid-cols-3">
+              {trajectory.map((t, i) => (
+                <li key={t.title} className="relative">
+                  <div className="mb-4 flex items-center gap-2">
+                    <span
+                      className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
+                      style={{
+                        backgroundColor: ["var(--sage)", "var(--ochre)", "var(--accent)"][i % 3],
+                      }}
+                    />
+                    <span className="h-px flex-1 bg-border" />
+                  </div>
+                  <p className="meta-label text-accent">{t.period}</p>
+                  <h4 className="mt-2 text-[18px]">{t.title}</h4>
+                  <p className="mt-1 text-[14px] leading-[1.7] text-muted-foreground">{t.place}</p>
                 </li>
               ))}
-            </ul>
-            <WaveRule className="mt-6 h-3 w-[160px] text-sage" />
+            </ol>
+            <WaveRule className="mt-14 h-5 w-[180px] text-sage" />
           </div>
         </section>
       </main>
@@ -229,7 +322,6 @@ function Index() {
           </a>
         </div>
       </footer>
-
     </div>
   );
 }
