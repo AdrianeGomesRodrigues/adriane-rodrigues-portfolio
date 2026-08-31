@@ -120,7 +120,7 @@ function Index() {
 
       <main>
         <section className="relative">
-          <HeroCollage className="pointer-events-none absolute right-0 top-6 hidden h-[300px] w-[340px] lg:block" />
+          <HeroCollage className="pointer-events-none absolute right-6 top-10 hidden h-[300px] w-[320px] xl:block" />
           <BlobCutout className="pointer-events-none absolute -left-24 -top-16 h-[280px] w-[280px] text-clay/25" />
           <div className="container-editorial section-y relative">
             <p className="meta-label mb-6">Operations · Legal · Process design</p>
@@ -128,7 +128,7 @@ function Index() {
               Cross-functional operations leader bridging{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">law</span>
-                <span className="absolute inset-x-[-4px] bottom-[0.1em] z-0 h-[0.36em] -rotate-1 bg-ochre/55" />
+                <span className="absolute inset-x-[-4px] bottom-[0.12em] z-0 h-[0.3em] -rotate-1 bg-ochre/55" />
               </span>
               , tech execution, and business systems.
             </h1>

@@ -86,7 +86,7 @@ export function HeroCollage({ className }: ShapeProps) {
       <div className="relative h-full w-full">
         <BlobCutout className="absolute -right-10 top-0 h-[240px] w-[240px] text-clay/70" />
         <LeafCutout className="absolute right-16 top-10 h-[210px] w-[126px] rotate-[14deg] text-sage/80" />
-        <ArchCutout className="absolute right-0 bottom-0 h-[150px] w-[110px] text-accent/85" />
+        <ArchCutout className="absolute right-2 bottom-0 h-[150px] w-[110px] text-accent/85" />
         <SunCutout className="absolute right-[150px] bottom-4 h-[92px] w-[92px] text-ochre" />
       </div>
     </div>
