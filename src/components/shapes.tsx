@@ -43,10 +43,11 @@ export function SunCutout({ className }: ShapeProps) {
       <circle cx="100" cy="100" r="52" fill="currentColor" />
       {Array.from({ length: 12 }).map((_, i) => {
         const a = (i / 12) * Math.PI * 2;
-        const x1 = 100 + Math.cos(a) * 68;
-        const y1 = 100 + Math.sin(a) * 68;
-        const x2 = 100 + Math.cos(a) * 92;
-        const y2 = 100 + Math.sin(a) * 92;
+        const r = (v: number) => Math.round(v * 100) / 100;
+        const x1 = r(100 + Math.cos(a) * 68);
+        const y1 = r(100 + Math.sin(a) * 68);
+        const x2 = r(100 + Math.cos(a) * 92);
+        const y2 = r(100 + Math.sin(a) * 92);
         return (
           <line
             key={i}
