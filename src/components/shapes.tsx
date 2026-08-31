@@ -41,25 +41,18 @@ export function SunCutout({ className }: ShapeProps) {
   return (
     <svg viewBox="0 0 200 200" aria-hidden className={className} fill="none">
       <circle cx="100" cy="100" r="52" fill="currentColor" />
-      {Array.from({ length: 12 }).map((_, i) => {
-        const a = (i / 12) * Math.PI * 2;
-        const x1 = 100 + Math.cos(a) * 68;
-        const y1 = 100 + Math.sin(a) * 68;
-        const x2 = 100 + Math.cos(a) * 92;
-        const y2 = 100 + Math.sin(a) * 92;
-        return (
-          <line
-            key={i}
-            x1={x1}
-            y1={y1}
-            x2={x2}
-            y2={y2}
-            stroke="currentColor"
-            strokeWidth="9"
-            strokeLinecap="round"
-          />
-        );
-      })}
+      <line x1="168.0" y1="100.0" x2="192.0" y2="100.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="158.89" y1="134.0" x2="179.67" y2="146.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="134.0" y1="158.89" x2="146.0" y2="179.67" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="100.0" y1="168.0" x2="100.0" y2="192.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="66.0" y1="158.89" x2="54.0" y2="179.67" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="41.11" y1="134.0" x2="20.33" y2="146.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="32.0" y1="100.0" x2="8.0" y2="100.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="41.11" y1="66.0" x2="20.33" y2="54.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="66.0" y1="41.11" x2="54.0" y2="20.33" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="100.0" y1="32.0" x2="100.0" y2="8.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="134.0" y1="41.11" x2="146.0" y2="20.33" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+      <line x1="158.89" y1="66.0" x2="179.67" y2="54.0" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
     </svg>
   );
 }
@@ -93,7 +86,7 @@ export function HeroCollage({ className }: ShapeProps) {
       <div className="relative h-full w-full">
         <BlobCutout className="absolute -right-10 top-0 h-[240px] w-[240px] text-clay/70" />
         <LeafCutout className="absolute right-16 top-10 h-[210px] w-[126px] rotate-[14deg] text-sage/80" />
-        <ArchCutout className="absolute right-0 bottom-0 h-[150px] w-[110px] text-accent/85" />
+        <ArchCutout className="absolute right-2 bottom-0 h-[150px] w-[110px] text-accent/85" />
         <SunCutout className="absolute right-[150px] bottom-4 h-[92px] w-[92px] text-ochre" />
       </div>
     </div>
