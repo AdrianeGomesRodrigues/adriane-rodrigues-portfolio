@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import {
   ArcLines,
-  ArchCutout,
   BlobCutout,
   ContourLines,
   HeroCollage,
@@ -237,9 +236,9 @@ function Index() {
                   key={p.title}
                   className="group relative overflow-hidden rounded-md border border-border bg-panel/60 p-6 transition-colors hover:border-accent/50"
                 >
-                  <ArchCutout
-                    className={`pointer-events-none absolute -right-2 -top-3 h-[52px] w-[38px] transition-transform duration-500 group-hover:translate-y-1 ${
-                      ["text-clay/40", "text-sage/40", "text-ochre/40", "text-accent/25"][i % 4]
+                  <ArcLines
+                    className={`pointer-events-none absolute right-4 top-4 h-[26px] w-[44px] transition-transform duration-500 group-hover:-translate-y-0.5 ${
+                      ["text-clay/60", "text-sage/60", "text-ochre/70", "text-accent/40"][i % 4]
                     }`}
                   />
                   <span className="display-index relative text-accent">{p.n}</span>
