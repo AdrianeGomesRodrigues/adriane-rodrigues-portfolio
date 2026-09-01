@@ -126,7 +126,7 @@ function Index() {
       <main className="flex-1">
         {/* Hero */}
         <section className="relative">
-          <HeroCollage className="pointer-events-none absolute right-4 top-14 hidden h-[280px] w-[300px] xl:block" />
+          <HeroCollage className="pointer-events-none absolute right-16 top-20 hidden h-[300px] w-[320px] xl:block" />
           <BlobCutout className="pointer-events-none absolute left-4 bottom-6 hidden h-[220px] w-[220px] text-clay/25 lg:block" />
           <div className="container-editorial section-y relative">
             <p className="meta-label mb-6 text-accent">— Operations leader · Law · Tech</p>
@@ -156,7 +156,7 @@ function Index() {
 
         {/* Scope — flip cards */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <ArcLines className="pointer-events-none absolute right-4 top-12 h-[120px] w-[200px] text-sage/50" />
+          <ArcLines className="pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[200px] text-sage/50 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
