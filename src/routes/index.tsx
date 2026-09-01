@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { ArrowUpRight } from "lucide-react";
 
 import {
   ArcLines,
@@ -28,6 +29,7 @@ export const Route = createFileRoute("/")({
 
 const EMAIL = "adrianegrodrigues@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/adrianegrodrigues/";
+const GITHUB = "https://github.com/adrianegrodrigues";
 
 const scope = [
   {
@@ -58,24 +60,28 @@ const projects = [
     title: "Public Grant Eligibility Evaluator",
     body: "Interactive tool mapping PT2030 & PRR criteria against company profiles.",
     tags: ["Public funding", "Eligibility", "Claude"],
+    href: GITHUB,
   },
   {
     n: "02",
     title: "Legal Ops Contract Risk Matrix",
     body: "Micro-tool for clause triage and risk scoring before signature.",
     tags: ["Legal ops", "Risk", "Sheets"],
+    href: GITHUB,
   },
   {
     n: "03",
     title: "In-Housing Public Grants",
     body: "Replaced external consultants to secure €800K with 100% audit compliance.",
     tags: ["Case study", "Governance", "Audit"],
+    href: GITHUB,
   },
   {
     n: "04",
     title: "Hiring & Onboarding Playbook",
     body: "One repeatable path from job brief to signed contract and first week.",
     tags: ["People ops", "SOP", "Compliance"],
+    href: GITHUB,
   },
 ];
 
@@ -99,11 +105,10 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function Index() {
   return (
-    <div className="min-h-screen overflow-x-clip">
+    <div className="flex min-h-screen flex-col overflow-x-clip">
       <header className="border-b border-border">
         <div className="container-editorial flex flex-wrap items-center justify-between gap-3 py-6">
           <span className="font-display text-[17px] font-semibold tracking-tight">
-            <span className="mr-2 text-accent">—</span>
             Adriane Rodrigues
           </span>
 
@@ -114,25 +119,22 @@ function Index() {
             <a className="link-underline" href={`mailto:${EMAIL}`}>
               Email
             </a>
-            <a className="link-underline" href="/cv.pdf">
-              CV
-            </a>
           </nav>
         </div>
       </header>
 
-      <main>
+      <main className="flex-1">
         {/* Hero */}
         <section className="relative">
-          <HeroCollage className="pointer-events-none absolute right-4 top-14 hidden h-[280px] w-[300px] xl:block" />
-          <BlobCutout className="pointer-events-none absolute -left-24 -top-16 h-[280px] w-[280px] text-clay/25" />
+          <HeroCollage className="pointer-events-none absolute right-16 top-20 hidden h-[300px] w-[320px] xl:block" />
+          <BlobCutout className="pointer-events-none absolute left-10 bottom-8 hidden h-[220px] w-[220px] text-clay/25 lg:block" />
           <div className="container-editorial section-y relative">
             <p className="meta-label mb-6 text-accent">— Operations leader · Law · Tech</p>
             <h1 className="max-w-[22ch] text-[34px] leading-[1.06] sm:text-[46px]">
               Building cross-functional systems at the intersection of{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">law</span>
-                <span className="absolute inset-x-[-4px] bottom-[0.12em] z-0 h-[0.3em] -rotate-1 bg-ochre/55" />
+                <span className="absolute inset-x-0 bottom-[0.12em] z-0 h-[0.28em] bg-ochre/55" />
               </span>
               , technology, and business operations.
             </h1>
@@ -148,22 +150,14 @@ function Index() {
               >
                 Get in touch
               </a>
-              <a
-                href={LINKEDIN}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-border px-6 py-3 text-[14px] font-medium transition-colors hover:border-accent hover:text-accent"
-              >
-                LinkedIn
-              </a>
             </div>
           </div>
         </section>
 
         {/* Scope — flip cards */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <ArcLines className="pointer-events-none absolute -right-10 top-12 h-[120px] w-[200px] text-sage/50" />
-          <div className="container-editorial section-y relative">
+          <ArcLines className="pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[200px] text-sage/50 lg:block" />
+          <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
             <p className="mb-12 max-w-[58ch] text-[16px] leading-[1.75] text-muted-foreground">
@@ -232,30 +226,38 @@ function Index() {
             <h3 className="mb-12 text-[26px] sm:text-[30px]">Case studies, in brief.</h3>
             <ul className="grid gap-4 sm:grid-cols-2">
               {projects.map((p, i) => (
-                <li
-                  key={p.title}
-                  className="group relative overflow-hidden rounded-md border border-border bg-panel/60 p-6 transition-colors hover:border-accent/50"
-                >
-                  <ArcLines
-                    className={`pointer-events-none absolute right-4 top-4 h-[26px] w-[44px] transition-transform duration-500 group-hover:-translate-y-0.5 ${
-                      ["text-clay/60", "text-sage/60", "text-ochre/70", "text-accent/40"][i % 4]
-                    }`}
-                  />
-                  <span className="display-index relative text-accent">{p.n}</span>
-                  <h4 className="relative mt-3 max-w-[24ch] text-[19px]">{p.title}</h4>
-                  <p className="relative mt-3 max-w-[40ch] text-[15px] leading-[1.7] text-muted-foreground">
-                    {p.body}
-                  </p>
-                  <div className="relative mt-5 flex flex-wrap gap-2">
-                    {p.tags.map((t) => (
-                      <span
-                        key={t}
-                        className="rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-muted-foreground"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
+                <li key={p.title}>
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group relative flex h-full flex-col overflow-hidden rounded-md border border-border bg-panel/60 p-6 transition-colors hover:border-accent/50"
+                  >
+                    <ArcLines
+                      className={`pointer-events-none absolute right-14 top-6 h-[16px] w-[28px] transition-transform duration-500 group-hover:-translate-y-0.5 ${
+                        ["text-clay/60", "text-sage/60", "text-ochre/70", "text-accent/40"][i % 4]
+                      }`}
+                    />
+                    <ArrowUpRight
+                      className="absolute right-5 top-5 h-4 w-4 text-muted-foreground transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
+                      strokeWidth={1.75}
+                    />
+                    <span className="display-index relative text-accent">{p.n}</span>
+                    <h4 className="relative mt-3 max-w-[24ch] text-[19px]">{p.title}</h4>
+                    <p className="relative mt-3 max-w-[40ch] text-[15px] leading-[1.7] text-muted-foreground">
+                      {p.body}
+                    </p>
+                    <div className="relative mt-5 flex flex-wrap gap-2">
+                      {p.tags.map((t) => (
+                        <span
+                          key={t}
+                          className="rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-muted-foreground"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -264,8 +266,8 @@ function Index() {
 
         {/* About */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <ContourLines className="pointer-events-none absolute -left-16 bottom-10 h-[170px] w-[170px] text-ochre/40" />
-          <div className="container-editorial section-y relative">
+          <ContourLines className="pointer-events-none absolute left-10 bottom-12 hidden h-[170px] w-[170px] text-ochre/40 lg:block" />
+          <div className="container-editorial section-y relative z-10">
             <SectionLabel>About</SectionLabel>
             <div className="max-w-[62ch] space-y-5 text-[16px] leading-[1.8]">
               <p>
@@ -307,13 +309,11 @@ function Index() {
                 </li>
               ))}
             </ol>
-            <WaveRule className="mt-14 h-5 w-[180px] text-sage" />
           </div>
         </section>
       </main>
 
-      <footer className="relative border-t border-border bg-panel/60 paper-grain">
-        <BlobCutout className="pointer-events-none absolute -right-16 -top-10 h-[200px] w-[200px] text-clay/30" />
+      <footer className="relative border-t border-border bg-panel/60">
         <div className="container-editorial relative flex flex-wrap items-center justify-between gap-3 py-10 text-[14px] text-muted-foreground">
           <p>Based in Coimbra, Portugal · Built with Claude &amp; Lovable · Hosted on GitHub Pages.</p>
           <a className="link-underline text-accent" href={`mailto:${EMAIL}`}>
