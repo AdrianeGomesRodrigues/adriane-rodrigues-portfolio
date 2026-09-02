@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const EMAIL = "adrianegrodrigues@gmail.com";
+const EMAIL = "adrianegrod@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/adrianegrodrigues/";
 const GITHUB = "https://github.com/adrianegrodrigues";
 
@@ -314,11 +314,8 @@ function Index() {
       </main>
 
       <footer className="relative border-t border-border bg-panel/60">
-        <div className="container-editorial relative flex flex-wrap items-center justify-between gap-3 py-10 text-[14px] text-muted-foreground">
+        <div className="container-editorial relative py-10 text-[14px] text-muted-foreground">
           <p>Based in Coimbra, Portugal · Built with Claude &amp; Lovable · Hosted on GitHub Pages.</p>
-          <a className="link-underline text-accent" href={`mailto:${EMAIL}`}>
-            {EMAIL}
-          </a>
         </div>
       </footer>
     </div>
