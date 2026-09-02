@@ -37,23 +37,33 @@ export function ArcLines({ className }: ShapeProps) {
   );
 }
 
-/** Loose abstract contour, Tarsila-like. */
+/** Loose abstract contour with a fully drawn, centered circle. */
 export function ContourLines({ className }: ShapeProps) {
   return (
     <svg viewBox="0 0 220 220" aria-hidden className={className} fill="none">
+      <circle cx="110" cy="110" r="62" stroke="currentColor" strokeWidth="2.5" />
+      <circle cx="110" cy="110" r="40" stroke="currentColor" strokeWidth="2.5" />
       <path
-        d="M20 180c-14-52 8-108 56-134 42-23 96-6 112 34"
+        d="M30 150c-6-46 20-90 62-104"
         stroke="currentColor"
         strokeWidth="2.5"
         strokeLinecap="round"
       />
       <path
-        d="M50 186c-10-42 8-86 46-106 32-17 74-6 88 26"
+        d="M190 70c6 46-20 90-62 104"
         stroke="currentColor"
         strokeWidth="2.5"
         strokeLinecap="round"
       />
-      <circle cx="150" cy="152" r="30" stroke="currentColor" strokeWidth="2.5" />
+    </svg>
+  );
+}
+
+/** A complete ring, always fully visible. */
+export function RingShape({ className }: ShapeProps) {
+  return (
+    <svg viewBox="0 0 120 120" aria-hidden className={className} fill="none">
+      <circle cx="60" cy="60" r="56" stroke="currentColor" strokeWidth="2.5" />
     </svg>
   );
 }
@@ -76,10 +86,11 @@ export function HeroCollage({ className }: ShapeProps) {
   return (
     <div className={className} aria-hidden>
       <div className="relative h-full w-full">
-        <BlobCutout className="absolute right-0 top-0 h-[230px] w-[230px] text-clay/60" />
-        <ArcLines className="absolute right-6 bottom-2 h-[110px] w-[190px] text-accent/70" />
-        <ContourLines className="absolute right-[140px] top-6 h-[150px] w-[150px] text-sage/80" />
+        <BlobCutout className="drift-slow absolute right-0 top-0 h-[210px] w-[210px] text-clay/60" />
+        <ArcLines className="drift-sway absolute right-8 bottom-2 h-[100px] w-[170px] text-accent/70" />
+        <ContourLines className="drift-medium absolute left-0 top-10 h-[150px] w-[150px] text-sage/80" />
       </div>
     </div>
   );
 }
+
