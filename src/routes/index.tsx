@@ -156,7 +156,7 @@ function Index() {
 
         {/* Scope — flip cards */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[110px] w-[180px] text-sage/50 lg:block" />
+          <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[120px] text-clay/45 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
@@ -180,7 +180,7 @@ function Index() {
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--sage)", "var(--clay)"][
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
                               i % 4
                             ],
                           }}
@@ -198,7 +198,7 @@ function Index() {
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--sage)", "var(--clay)"][
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
                               i % 4
                             ],
                           }}
@@ -234,10 +234,11 @@ function Index() {
                     className="group relative flex h-full flex-col overflow-hidden rounded-md border border-border bg-panel/60 p-6 transition-colors hover:border-accent/50"
                   >
                     <ArcLines
-                      className={`pointer-events-none absolute right-14 top-6 h-[16px] w-[28px] transition-transform duration-500 group-hover:-translate-y-0.5 ${
-                        ["text-clay/60", "text-sage/60", "text-ochre/70", "text-accent/40"][i % 4]
+                      className={`pointer-events-none absolute right-14 top-5 h-[22px] w-[22px] transition-transform duration-500 group-hover:-translate-y-0.5 ${
+                        ["text-clay/60", "text-ochre/70", "text-accent/50", "text-clay/40"][i % 4]
                       }`}
                     />
+
                     <ArrowUpRight
                       className="absolute right-5 top-5 h-4 w-4 text-muted-foreground transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
                       strokeWidth={1.75}
@@ -298,7 +299,7 @@ function Index() {
                     <span
                       className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                       style={{
-                        backgroundColor: ["var(--sage)", "var(--ochre)", "var(--accent)"][i % 3],
+                        backgroundColor: ["var(--clay)", "var(--ochre)", "var(--accent)"][i % 3],
                       }}
                     />
                     <span className="h-px flex-1 bg-border" />
