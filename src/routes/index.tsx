@@ -234,10 +234,11 @@ function Index() {
                     className="group relative flex h-full flex-col overflow-hidden rounded-md border border-border bg-panel/60 p-6 transition-colors hover:border-accent/50"
                   >
                     <ArcLines
-                      className={`pointer-events-none absolute right-14 top-6 h-[16px] w-[28px] transition-transform duration-500 group-hover:-translate-y-0.5 ${
-                        ["text-clay/60", "text-sage/60", "text-ochre/70", "text-accent/40"][i % 4]
+                      className={`pointer-events-none absolute right-14 top-5 h-[22px] w-[22px] transition-transform duration-500 group-hover:-translate-y-0.5 ${
+                        ["text-clay/60", "text-ochre/70", "text-accent/50", "text-clay/40"][i % 4]
                       }`}
                     />
+
                     <ArrowUpRight
                       className="absolute right-5 top-5 h-4 w-4 text-muted-foreground transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
                       strokeWidth={1.75}
