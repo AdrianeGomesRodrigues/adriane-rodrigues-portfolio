@@ -180,7 +180,7 @@ function Index() {
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--sage)", "var(--clay)"][
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
                               i % 4
                             ],
                           }}
@@ -198,7 +198,7 @@ function Index() {
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--sage)", "var(--clay)"][
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
                               i % 4
                             ],
                           }}
@@ -299,7 +299,7 @@ function Index() {
                     <span
                       className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                       style={{
-                        backgroundColor: ["var(--sage)", "var(--ochre)", "var(--accent)"][i % 3],
+                        backgroundColor: ["var(--clay)", "var(--ochre)", "var(--accent)"][i % 3],
                       }}
                     />
                     <span className="h-px flex-1 bg-border" />
