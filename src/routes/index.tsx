@@ -127,7 +127,7 @@ function Index() {
         {/* Hero */}
         <section className="relative">
           <HeroCollage className="pointer-events-none absolute right-16 top-20 hidden h-[300px] w-[320px] xl:block" />
-          <BlobCutout className="pointer-events-none absolute left-10 bottom-8 hidden h-[220px] w-[220px] text-clay/25 lg:block" />
+          <BlobCutout className="drift-medium pointer-events-none absolute left-4 bottom-6 hidden h-[200px] w-[200px] text-clay/25 lg:block" />
           <div className="container-editorial section-y relative">
             <p className="meta-label mb-6 text-accent">— Operations leader · Law · Tech</p>
             <h1 className="max-w-[22ch] text-[34px] leading-[1.06] sm:text-[46px]">
@@ -156,7 +156,7 @@ function Index() {
 
         {/* Scope — flip cards */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <ArcLines className="pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[200px] text-sage/50 lg:block" />
+          <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[110px] w-[180px] text-sage/50 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
@@ -266,7 +266,7 @@ function Index() {
 
         {/* About */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <ContourLines className="pointer-events-none absolute left-10 bottom-12 hidden h-[170px] w-[170px] text-ochre/40 lg:block" />
+          <ContourLines className="drift-slow pointer-events-none absolute left-4 bottom-12 hidden h-[160px] w-[160px] text-ochre/40 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>About</SectionLabel>
             <div className="max-w-[62ch] space-y-5 text-[16px] leading-[1.8]">
