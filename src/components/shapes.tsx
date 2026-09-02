@@ -77,8 +77,8 @@ export function HeroCollage({ className }: ShapeProps) {
     <div className={className} aria-hidden>
       <div className="relative h-full w-full">
         <BlobCutout className="drift-slow absolute right-0 top-0 h-[210px] w-[210px] text-clay/60" />
-        <ArcLines className="drift-sway absolute right-8 bottom-2 h-[100px] w-[170px] text-accent/70" />
-        <ContourLines className="drift-medium absolute left-0 top-10 h-[150px] w-[150px] text-sage/80" />
+        <ArcLines className="drift-sway absolute right-6 bottom-0 h-[110px] w-[110px] text-accent/70" />
+        <ContourLines className="drift-medium absolute left-0 top-12 h-[130px] w-[130px] text-sage/45" />
       </div>
     </div>
   );

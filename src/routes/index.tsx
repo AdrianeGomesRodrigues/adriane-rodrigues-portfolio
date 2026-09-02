@@ -156,7 +156,7 @@ function Index() {
 
         {/* Scope — flip cards */}
         <section className="relative border-t border-border bg-panel/50 paper-grain">
-          <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[110px] w-[180px] text-sage/50 lg:block" />
+          <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[120px] text-clay/45 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
