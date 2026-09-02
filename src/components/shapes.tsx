@@ -26,38 +26,28 @@ export function ArchCutout({ className }: ShapeProps) {
   );
 }
 
-/** Concentric open arcs — abstract, architectural. */
+/** Concentric complete rings — abstract, architectural. */
 export function ArcLines({ className }: ShapeProps) {
   return (
-    <svg viewBox="0 0 200 120" aria-hidden className={className} fill="none">
-      <path d="M4 116a96 96 0 0 1 192 0" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M34 116a66 66 0 0 1 132 0" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M64 116a36 36 0 0 1 72 0" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <svg viewBox="0 0 120 120" aria-hidden className={className} fill="none">
+      <circle cx="60" cy="60" r="57" stroke="currentColor" strokeWidth="2" />
+      <circle cx="60" cy="60" r="39" stroke="currentColor" strokeWidth="2" />
+      <circle cx="60" cy="60" r="21" stroke="currentColor" strokeWidth="2" />
     </svg>
   );
 }
 
-/** Loose abstract contour with a fully drawn, centered circle. */
+/** Concentric rings with a dot — fully drawn, perfectly centered. */
 export function ContourLines({ className }: ShapeProps) {
   return (
-    <svg viewBox="0 0 220 220" aria-hidden className={className} fill="none">
-      <circle cx="110" cy="110" r="62" stroke="currentColor" strokeWidth="2.5" />
-      <circle cx="110" cy="110" r="40" stroke="currentColor" strokeWidth="2.5" />
-      <path
-        d="M30 150c-6-46 20-90 62-104"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M190 70c6 46-20 90-62 104"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-      />
+    <svg viewBox="0 0 120 120" aria-hidden className={className} fill="none">
+      <circle cx="60" cy="60" r="57" stroke="currentColor" strokeWidth="2" />
+      <circle cx="60" cy="60" r="34" stroke="currentColor" strokeWidth="2" />
+      <circle cx="60" cy="60" r="8" fill="currentColor" />
     </svg>
   );
 }
+
 
 /** A complete ring, always fully visible. */
 export function RingShape({ className }: ShapeProps) {
