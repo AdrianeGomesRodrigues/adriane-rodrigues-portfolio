@@ -160,9 +160,7 @@ function Index() {
             <SectionLabel>What I do</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
             <p className="mb-12 max-w-[58ch] text-[16px] leading-[1.75] text-muted-foreground">
-              I manage the operational backbone of tech-driven companies. My background is in law
-              (LLB, LLM), but my daily execution lives at the intersection of process design,
-              compliance, and internal tooling.
+              I manage core business functions in-house, designing processes that bring legal precision, financial structure, and technical automation into daily operations.
             </p>
 
             <ul className="grid gap-4 sm:grid-cols-2">
