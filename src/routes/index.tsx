@@ -140,8 +140,7 @@ function Index() {
             </h1>
             <WaveRule className="mt-8 h-5 w-[220px] text-accent/70" />
             <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.75] text-muted-foreground">
-              Running legal, finance, HR, and public funding for a software company in Portugal.
-              Picking up whatever each new domain requires, then owning it end to end.
+              Creating operational frameworks, managing legal and finantial lifecycles, and automating internal systems. I bridge the gaps between Law, Finance, HR, and Tech, picking up whatever each new domain requires, then owning it end to end.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
