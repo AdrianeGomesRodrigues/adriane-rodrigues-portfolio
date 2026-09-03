@@ -377,6 +377,52 @@ function Index() {
             </ol>
           </div>
         </section>
+
+        {/* Contact */}
+        <section id="contact" className="relative border-t border-border bg-panel/50 paper-grain scroll-mt-8">
+          <BlobCutout className="drift-sway pointer-events-none absolute right-8 bottom-10 hidden h-[150px] w-[150px] text-clay/20 lg:block" />
+          <div className="container-editorial section-y relative z-10">
+            <SectionLabel>Contact</SectionLabel>
+            <h3 className="mb-6 text-[26px] sm:text-[30px]">Let's talk.</h3>
+            <p className="mb-10 max-w-[52ch] text-[16px] leading-[1.75] text-muted-foreground">
+              Open to Legal Ops, People/HR Operations, and Operations Leadership roles, as well as
+              focused project work. The fastest way to reach me is by email.
+            </p>
+
+            <dl className="grid gap-6 sm:grid-cols-3">
+              <div>
+                <dt className="meta-label text-accent">Email</dt>
+                <dd className="mt-2 text-[15px]">
+                  <a className="link-underline" href={`mailto:${EMAIL}`}>
+                    {EMAIL}
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="meta-label text-accent">LinkedIn</dt>
+                <dd className="mt-2 text-[15px]">
+                  <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
+                    /adrianegrodrigues
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="meta-label text-accent">Based in</dt>
+                <dd className="mt-2 text-[15px] text-muted-foreground">Coimbra, Portugal</dd>
+              </div>
+            </dl>
+
+            <div className="mt-10">
+              <a
+                href={`mailto:${EMAIL}?subject=Hello%20Adriane`}
+                className="inline-block rounded-full bg-accent px-6 py-3 text-[14px] font-medium text-accent-foreground transition-opacity hover:opacity-90"
+              >
+                Send an email
+              </a>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer className="relative border-t border-border bg-panel/60">
