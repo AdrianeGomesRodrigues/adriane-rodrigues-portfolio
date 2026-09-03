@@ -338,9 +338,8 @@ function Index() {
             <div className="max-w-[62ch] space-y-5 text-[16px] leading-[1.8]">
               <p>
                 I am a generalist operator based in Portugal with a formal legal background (LLB and
-                LLM in Corporate Law with a thesis on Blockchain &amp; IP). Rather than practicing in
-                a traditional law firm, I chose to apply my legal training directly inside dynamic
-                environments.
+                LLM in Corporate Law). Rather than practicing in a traditional law firm, I chose to
+                apply my legal training directly inside dynamic environments.
               </p>
               <p className="text-muted-foreground">
                 I target Legal Ops, People/HR Operations, and Operations Leadership roles within
