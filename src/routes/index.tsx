@@ -200,14 +200,14 @@ function Index() {
           <HeroCollage className="pointer-events-none absolute right-16 top-20 hidden h-[300px] w-[320px] xl:block" />
           <BlobCutout className="drift-medium pointer-events-none absolute left-4 bottom-6 hidden h-[200px] w-[200px] text-clay/25 lg:block" />
           <div className="container-editorial section-y relative">
-            <p className="meta-label mb-6 text-accent">— Operations leader · Law · Tech</p>
-            <h1 className="max-w-[22ch] text-[34px] leading-[1.06] sm:text-[46px]">
-              Building cross-functional systems at the intersection of{" "}
+            <p className="meta-label mb-6 text-accent">— Law · People · Business Operations</p>
+            <h1 className="max-w-[24ch] text-[34px] leading-[1.06] sm:text-[46px]">
+              Building the cross-functional systems that let tech companies scale{" "}
               <span className="relative inline-block">
-                <span className="relative z-10">law</span>
+                <span className="relative z-10">cleanly</span>
                 <span className="absolute inset-x-0 bottom-[0.12em] z-0 h-[0.28em] bg-ochre/55" />
               </span>
-              , technology, and business operations.
+              .
             </h1>
             <WaveRule className="mt-8 h-5 w-[220px] text-accent/70" />
             <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.75] text-muted-foreground">
@@ -215,11 +215,13 @@ function Index() {
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
-                href={`mailto:${EMAIL}`}
+                href="#contact"
                 className="rounded-full bg-accent px-6 py-3 text-[14px] font-medium text-accent-foreground transition-opacity hover:opacity-90"
               >
                 Get in touch
               </a>
+            </div>
+
             </div>
           </div>
         </section>
