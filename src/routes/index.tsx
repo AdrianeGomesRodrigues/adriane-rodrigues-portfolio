@@ -187,9 +187,10 @@ function Index() {
             <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a className="link-underline" href={`mailto:${EMAIL}`}>
-              Email
+            <a className="link-underline" href="#contact">
+              Contact
             </a>
+
           </nav>
         </div>
       </header>
