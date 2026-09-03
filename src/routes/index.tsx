@@ -296,7 +296,7 @@ function Index() {
             <h3 className="mb-12 text-[26px] sm:text-[30px]">Case studies, in brief.</h3>
             <ul className="grid gap-4 sm:grid-cols-2">
               {projects.map((p, i) => (
-                <li key={p.title}>
+                <li key={p.n}>
                   <a
                     href={p.href}
                     target="_blank"
