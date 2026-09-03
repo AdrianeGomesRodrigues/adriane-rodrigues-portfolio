@@ -313,9 +313,9 @@ function Index() {
                       {p.body}
                     </p>
                     <div className="relative mt-5 flex flex-wrap gap-2">
-                      {p.tags.map((t) => (
+                      {p.tags.map((t, ti) => (
                         <span
-                          key={t}
+                          key={ti}
                           className="rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-muted-foreground"
                         >
                           {t}
