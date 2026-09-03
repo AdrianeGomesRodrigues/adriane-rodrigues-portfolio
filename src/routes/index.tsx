@@ -239,7 +239,7 @@ function Index() {
               {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group h-[320px] [perspective:1200px]"
+                  className="group h-[270px] [perspective:1200px]"
                   tabIndex={0}
                 >
                   <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
@@ -274,7 +274,7 @@ function Index() {
                       <h4 className="mt-3 text-[16px]">{item.title}</h4>
                       <ul className="mt-3 space-y-2.5">
                         {item.items.map((sub) => (
-                          <li key={sub.label} className="text-[12.5px] leading-[1.55]">
+                          <li key={sub.label} className="text-[12px] leading-[1.5]">
                             <span className="font-medium">{sub.label}:</span>{" "}
                             <span className="text-muted-foreground">{sub.text}</span>
                           </li>
