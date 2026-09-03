@@ -221,9 +221,8 @@ function Index() {
                 Get in touch
               </a>
             </div>
-
-            </div>
           </div>
+
         </section>
 
         {/* Scope — flip cards */}
