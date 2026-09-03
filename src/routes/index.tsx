@@ -35,55 +35,126 @@ const scope = [
   {
     n: "01",
     title: "Legal & Regulatory",
-    body: "Contract lifecycle (MSA, DPA, NDA), GDPR frameworks, and risk mitigation across engineering teams.",
+    items: [
+      {
+        label: "Contract Lifecycle Management",
+        text: "End-to-end review, drafting, and negotiation of commercial contracts, such as MSAs, NDAs, DPAs, and SOWs.",
+      },
+      {
+        label: "Compliance & Governance",
+        text: "GDPR implementation across HR and client workflows; cross-jurisdictional risk monitoring and compliance with relevant regulations and laws.",
+      },
+      {
+        label: "Workflow Standardization",
+        text: "Creating repeatable contract intake, approval, and repository systems to eliminate legal bottlenecks.",
+      },
+    ],
   },
   {
     n: "02",
     title: "Public & EU Funding",
-    body: "End-to-end lifecycle management for PT2030, PRR, and Horizon programs (~€800K secured and managed in-house).",
+    items: [
+      {
+        label: "Grant Lifecycle Execution",
+        text: "Full end-to-end management of public grants.",
+      },
+      {
+        label: "In-House Operation",
+        text: "Handling eligibility assessments, technical applications, and reporting.",
+      },
+      {
+        label: "Audit Readiness",
+        text: "Structuring compliance and documentation frameworks to meet strict public audit requirements.",
+      },
+    ],
   },
   {
     n: "03",
-    title: "Finance & People",
-    body: "Financial administration, budget tracking, IT recruitment, and Portuguese Labour Code compliance.",
+    title: "People & HR Operations",
+    items: [
+      {
+        label: "Full-Lifecycle HR Administration",
+        text: "Managing end-to-end recruitment, technical onboarding, offboarding, and talent operations.",
+      },
+      {
+        label: "Labor Compliance",
+        text: "Aligning internal HR workflows with labor legislation and tech-sector regulations.",
+      },
+      {
+        label: "People Systems & Infrastructure",
+        text: "Structuring HR databases, leave management, and employee documentation workflows.",
+      },
+    ],
   },
   {
     n: "04",
-    title: "Process & Automation",
-    body: "Standardizing SOPs and automating manual workflows using Claude, Make, and Google Apps Script.",
+    title: "Finance & Tax Operations",
+    items: [
+      {
+        label: "Financial Oversight & Budgeting",
+        text: "Direct ownership of company budgeting, budget control, and ongoing cash-flow tracking.",
+      },
+      {
+        label: "Accounting & Fiscal Compliance",
+        text: "Partnering directly with external accounting to ensure full tax and fiscal compliance under Portuguese and European regulations.",
+      },
+      {
+        label: "Operational Invoicing & Accounts",
+        text: "Managing invoice lifecycles, accounts management, and financial reporting across projects.",
+      },
+    ],
+  },
+  {
+    n: "05",
+    title: "Process Systems & Internal Automation",
+    items: [
+      {
+        label: "Operational SOP Architecture",
+        text: "Designing clear, enforceable operational guidelines across cross-functional teams.",
+      },
+      {
+        label: "Practical AI & No-Code Automation",
+        text: "Deploying Make, Google Apps Script, and LLM prompts to automate manual tasks.",
+      },
+      {
+        label: "Tooling Management",
+        text: "Structuring Jira, Notion, and workspace environments for cross-functional delivery and coordination.",
+      },
+    ],
   },
 ];
 
 const projects = [
   {
     n: "01",
-    title: "Public Grant Eligibility Evaluator",
-    body: "Interactive tool mapping PT2030 & PRR criteria against company profiles.",
-    tags: ["Public funding", "Eligibility", "Claude"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "02",
-    title: "Legal Ops Contract Risk Matrix",
-    body: "Micro-tool for clause triage and risk scoring before signature.",
-    tags: ["Legal ops", "Risk", "Sheets"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "03",
-    title: "In-Housing Public Grants",
-    body: "Replaced external consultants to secure €800K with 100% audit compliance.",
-    tags: ["Case study", "Governance", "Audit"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "04",
-    title: "Hiring & Onboarding Playbook",
-    body: "One repeatable path from job brief to signed contract and first week.",
-    tags: ["People ops", "SOP", "Compliance"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
 ];
+
 
 const trajectory = [
   { period: "2016 – 2021", title: "LLB in Law", place: "University of Coimbra" },
@@ -116,9 +187,10 @@ function Index() {
             <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a className="link-underline" href={`mailto:${EMAIL}`}>
-              Email
+            <a className="link-underline" href="#contact">
+              Contact
             </a>
+
           </nav>
         </div>
       </header>
@@ -129,14 +201,14 @@ function Index() {
           <HeroCollage className="pointer-events-none absolute right-16 top-20 hidden h-[300px] w-[320px] xl:block" />
           <BlobCutout className="drift-medium pointer-events-none absolute left-4 bottom-6 hidden h-[200px] w-[200px] text-clay/25 lg:block" />
           <div className="container-editorial section-y relative">
-            <p className="meta-label mb-6 text-accent">— Operations leader · Law · Tech</p>
-            <h1 className="max-w-[22ch] text-[34px] leading-[1.06] sm:text-[46px]">
-              Building cross-functional systems at the intersection of{" "}
+            <p className="meta-label mb-6 text-accent">— Law · People · Business Operations</p>
+            <h1 className="max-w-[24ch] text-[34px] leading-[1.06] sm:text-[46px]">
+              Building the cross-functional systems that let tech companies scale{" "}
               <span className="relative inline-block">
-                <span className="relative z-10">law</span>
+                <span className="relative z-10">cleanly</span>
                 <span className="absolute inset-x-0 bottom-[0.12em] z-0 h-[0.28em] bg-ochre/55" />
               </span>
-              , technology, and business operations.
+              .
             </h1>
             <WaveRule className="mt-8 h-5 w-[220px] text-accent/70" />
             <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.75] text-muted-foreground">
@@ -144,13 +216,14 @@ function Index() {
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
-                href={`mailto:${EMAIL}`}
+                href="#contact"
                 className="rounded-full bg-accent px-6 py-3 text-[14px] font-medium text-accent-foreground transition-opacity hover:opacity-90"
               >
                 Get in touch
               </a>
             </div>
           </div>
+
         </section>
 
         {/* Scope — flip cards */}
@@ -158,7 +231,7 @@ function Index() {
           <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[120px] text-clay/45 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
-            <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
+            <h3 className="mb-6 text-[26px] sm:text-[30px]">Five domains, one owner.</h3>
             <p className="mb-12 max-w-[58ch] text-[16px] leading-[1.75] text-muted-foreground">
               I manage core business functions in-house, designing processes that bring legal precision, financial structure, and technical automation into daily operations.
             </p>
@@ -167,7 +240,7 @@ function Index() {
               {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group h-[190px] [perspective:1200px]"
+                  className="group h-[310px] [perspective:1200px]"
                   tabIndex={0}
                 >
                   <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
@@ -177,37 +250,37 @@ function Index() {
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
-                              i % 4
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)"][
+                              i % 3
                             ],
                           }}
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
                       </span>
-                      <div>
-                        <h4 className="text-[21px]">{item.title}</h4>
-                        <p className="mt-2 text-[13px] text-muted-foreground">Hover to read more</p>
-                      </div>
+                      <h4 className="max-w-[18ch] text-[21px]">{item.title}</h4>
                     </div>
                     {/* back */}
-                    <div className="absolute inset-0 flex flex-col justify-between rounded-md border border-accent/40 bg-panel p-6 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className="absolute inset-0 flex flex-col rounded-md border border-accent/40 bg-panel p-6 [backface-visibility:hidden] [transform:rotateY(180deg)]">
                       <span className="flex items-center gap-2.5">
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
-                              i % 4
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)"][
+                              i % 3
                             ],
                           }}
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
                       </span>
-                      <div>
-                        <h4 className="text-[17px]">{item.title}</h4>
-                        <p className="mt-2 text-[14px] leading-[1.65] text-muted-foreground">
-                          {item.body}
-                        </p>
-                      </div>
+                      <h4 className="mt-3 text-[16px]">{item.title}</h4>
+                      <ul className="mt-3 space-y-2.5">
+                        {item.items.map((sub) => (
+                          <li key={sub.label} className="text-[12px] leading-[1.5]">
+                            <span className="font-medium">{sub.label}:</span>{" "}
+                            <span className="text-muted-foreground">{sub.text}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </li>
@@ -216,6 +289,7 @@ function Index() {
           </div>
         </section>
 
+
         {/* Projects */}
         <section className="relative border-t border-border">
           <div className="container-editorial section-y relative">
@@ -223,7 +297,7 @@ function Index() {
             <h3 className="mb-12 text-[26px] sm:text-[30px]">Case studies, in brief.</h3>
             <ul className="grid gap-4 sm:grid-cols-2">
               {projects.map((p, i) => (
-                <li key={p.title}>
+                <li key={p.n}>
                   <a
                     href={p.href}
                     target="_blank"
@@ -240,9 +314,9 @@ function Index() {
                       {p.body}
                     </p>
                     <div className="relative mt-5 flex flex-wrap gap-2">
-                      {p.tags.map((t) => (
+                      {p.tags.map((t, ti) => (
                         <span
-                          key={t}
+                          key={ti}
                           className="rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-muted-foreground"
                         >
                           {t}
@@ -263,17 +337,17 @@ function Index() {
             <SectionLabel>About</SectionLabel>
             <div className="max-w-[62ch] space-y-5 text-[16px] leading-[1.8]">
               <p>
-                Trained as a lawyer (LLB, LLM from the University of Coimbra), I moved into
-                operations because I wanted to build the systems a company runs on, not just review
-                them after the fact. Since 2021, I've run legal, finance, HR, and public funding for
-                a software company as one connected function rather than four separate jobs.
+                I am a generalist operator based in Portugal with a formal legal background (LLB and
+                LLM in Corporate Law with a thesis on Blockchain &amp; IP). Rather than practicing in
+                a traditional law firm, I chose to apply my legal training directly inside dynamic
+                environments.
               </p>
               <p className="text-muted-foreground">
-                Each new domain came with its own learning curve, and I've made a habit of closing it
-                fast enough to own the work end to end. That's what replaced outside consultants on
-                public grant management, and what keeps contracts, hiring, and budgets moving without
-                the usual handoffs between departments.
+                I target Legal Ops, People/HR Operations, and Operations Leadership roles within
+                European technology scale-ups, legal-tech platforms, and software companies that
+                value high autonomy, direct execution, and structural clarity.
               </p>
+
             </div>
           </div>
         </section>
@@ -303,6 +377,52 @@ function Index() {
             </ol>
           </div>
         </section>
+
+        {/* Contact */}
+        <section id="contact" className="relative border-t border-border bg-panel/50 paper-grain scroll-mt-8">
+          <BlobCutout className="drift-sway pointer-events-none absolute right-8 bottom-10 hidden h-[150px] w-[150px] text-clay/20 lg:block" />
+          <div className="container-editorial section-y relative z-10">
+            <SectionLabel>Contact</SectionLabel>
+            <h3 className="mb-6 text-[26px] sm:text-[30px]">Let's talk.</h3>
+            <p className="mb-10 max-w-[52ch] text-[16px] leading-[1.75] text-muted-foreground">
+              Open to Legal Ops, People/HR Operations, and Operations Leadership roles, as well as
+              focused project work. The fastest way to reach me is by email.
+            </p>
+
+            <dl className="grid gap-6 sm:grid-cols-3">
+              <div>
+                <dt className="meta-label text-accent">Email</dt>
+                <dd className="mt-2 text-[15px]">
+                  <a className="link-underline" href={`mailto:${EMAIL}`}>
+                    {EMAIL}
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="meta-label text-accent">LinkedIn</dt>
+                <dd className="mt-2 text-[15px]">
+                  <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
+                    /adrianegrodrigues
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="meta-label text-accent">Based in</dt>
+                <dd className="mt-2 text-[15px] text-muted-foreground">Coimbra, Portugal</dd>
+              </div>
+            </dl>
+
+            <div className="mt-10">
+              <a
+                href={`mailto:${EMAIL}?subject=Hello%20Adriane`}
+                className="inline-block rounded-full bg-accent px-6 py-3 text-[14px] font-medium text-accent-foreground transition-opacity hover:opacity-90"
+              >
+                Send an email
+              </a>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer className="relative border-t border-border bg-panel/60">
