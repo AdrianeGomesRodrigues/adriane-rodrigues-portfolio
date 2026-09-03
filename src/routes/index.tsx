@@ -337,17 +337,17 @@ function Index() {
             <SectionLabel>About</SectionLabel>
             <div className="max-w-[62ch] space-y-5 text-[16px] leading-[1.8]">
               <p>
-                Trained as a lawyer (LLB, LLM from the University of Coimbra), I moved into
-                operations because I wanted to build the systems a company runs on, not just review
-                them after the fact. Since 2021, I've run legal, finance, HR, and public funding for
-                a software company as one connected function rather than four separate jobs.
+                I am a generalist operator based in Portugal with a formal legal background (LLB and
+                LLM in Corporate Law with a thesis on Blockchain &amp; IP). Rather than practicing in
+                a traditional law firm, I chose to apply my legal training directly inside dynamic
+                environments.
               </p>
               <p className="text-muted-foreground">
-                Each new domain came with its own learning curve, and I've made a habit of closing it
-                fast enough to own the work end to end. That's what replaced outside consultants on
-                public grant management, and what keeps contracts, hiring, and budgets moving without
-                the usual handoffs between departments.
+                I target Legal Ops, People/HR Operations, and Operations Leadership roles within
+                European technology scale-ups, legal-tech platforms, and software companies that
+                value high autonomy, direct execution, and structural clarity.
               </p>
+
             </div>
           </div>
         </section>
