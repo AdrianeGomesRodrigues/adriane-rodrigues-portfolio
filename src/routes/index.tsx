@@ -35,55 +35,126 @@ const scope = [
   {
     n: "01",
     title: "Legal & Regulatory",
-    body: "Contract lifecycle (MSA, DPA, NDA), GDPR frameworks, and risk mitigation across engineering teams.",
+    items: [
+      {
+        label: "Contract Lifecycle Management",
+        text: "End-to-end review, drafting, and negotiation of commercial contracts, such as MSAs, NDAs, DPAs, and SOWs.",
+      },
+      {
+        label: "Compliance & Governance",
+        text: "GDPR implementation across HR and client workflows; cross-jurisdictional risk monitoring and compliance with relevant regulations and laws.",
+      },
+      {
+        label: "Workflow Standardization",
+        text: "Creating repeatable contract intake, approval, and repository systems to eliminate legal bottlenecks.",
+      },
+    ],
   },
   {
     n: "02",
     title: "Public & EU Funding",
-    body: "End-to-end lifecycle management for PT2030, PRR, and Horizon programs (~€800K secured and managed in-house).",
+    items: [
+      {
+        label: "Grant Lifecycle Execution",
+        text: "Full end-to-end management of public grants.",
+      },
+      {
+        label: "In-House Operation",
+        text: "Handling eligibility assessments, technical applications, and reporting.",
+      },
+      {
+        label: "Audit Readiness",
+        text: "Structuring compliance and documentation frameworks to meet strict public audit requirements.",
+      },
+    ],
   },
   {
     n: "03",
-    title: "Finance & People",
-    body: "Financial administration, budget tracking, IT recruitment, and Portuguese Labour Code compliance.",
+    title: "People & HR Operations",
+    items: [
+      {
+        label: "Full-Lifecycle HR Administration",
+        text: "Managing end-to-end recruitment, technical onboarding, offboarding, and talent operations.",
+      },
+      {
+        label: "Labor Compliance",
+        text: "Aligning internal HR workflows with labor legislation and tech-sector regulations.",
+      },
+      {
+        label: "People Systems & Infrastructure",
+        text: "Structuring HR databases, leave management, and employee documentation workflows.",
+      },
+    ],
   },
   {
     n: "04",
-    title: "Process & Automation",
-    body: "Standardizing SOPs and automating manual workflows using Claude, Make, and Google Apps Script.",
+    title: "Finance & Tax Operations",
+    items: [
+      {
+        label: "Financial Oversight & Budgeting",
+        text: "Direct ownership of company budgeting, budget control, and ongoing cash-flow tracking.",
+      },
+      {
+        label: "Accounting & Fiscal Compliance",
+        text: "Partnering directly with external accounting to ensure full tax and fiscal compliance under Portuguese and European regulations.",
+      },
+      {
+        label: "Operational Invoicing & Accounts",
+        text: "Managing invoice lifecycles, accounts management, and financial reporting across projects.",
+      },
+    ],
+  },
+  {
+    n: "05",
+    title: "Process Systems & Internal Automation",
+    items: [
+      {
+        label: "Operational SOP Architecture",
+        text: "Designing clear, enforceable operational guidelines across cross-functional teams.",
+      },
+      {
+        label: "Practical AI & No-Code Automation",
+        text: "Deploying Make, Google Apps Script, and LLM prompts to automate manual tasks.",
+      },
+      {
+        label: "Tooling Management",
+        text: "Structuring Jira, Notion, and workspace environments for cross-functional delivery and coordination.",
+      },
+    ],
   },
 ];
 
 const projects = [
   {
     n: "01",
-    title: "Public Grant Eligibility Evaluator",
-    body: "Interactive tool mapping PT2030 & PRR criteria against company profiles.",
-    tags: ["Public funding", "Eligibility", "Claude"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "02",
-    title: "Legal Ops Contract Risk Matrix",
-    body: "Micro-tool for clause triage and risk scoring before signature.",
-    tags: ["Legal ops", "Risk", "Sheets"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "03",
-    title: "In-Housing Public Grants",
-    body: "Replaced external consultants to secure €800K with 100% audit compliance.",
-    tags: ["Case study", "Governance", "Audit"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "04",
-    title: "Hiring & Onboarding Playbook",
-    body: "One repeatable path from job brief to signed contract and first week.",
-    tags: ["People ops", "SOP", "Compliance"],
+    title: "Case study coming soon",
+    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
+    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
 ];
+
 
 const trajectory = [
   { period: "2016 – 2021", title: "LLB in Law", place: "University of Coimbra" },
