@@ -231,7 +231,7 @@ function Index() {
           <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[120px] text-clay/45 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
-            <h3 className="mb-6 text-[26px] sm:text-[30px]">Four domains, one owner.</h3>
+            <h3 className="mb-6 text-[26px] sm:text-[30px]">Five domains, one owner.</h3>
             <p className="mb-12 max-w-[58ch] text-[16px] leading-[1.75] text-muted-foreground">
               I manage core business functions in-house, designing processes that bring legal precision, financial structure, and technical automation into daily operations.
             </p>
@@ -240,7 +240,7 @@ function Index() {
               {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group h-[190px] [perspective:1200px]"
+                  className="group h-[320px] [perspective:1200px]"
                   tabIndex={0}
                 >
                   <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
@@ -250,37 +250,37 @@ function Index() {
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
-                              i % 4
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)"][
+                              i % 3
                             ],
                           }}
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
                       </span>
-                      <div>
-                        <h4 className="text-[21px]">{item.title}</h4>
-                        <p className="mt-2 text-[13px] text-muted-foreground">Hover to read more</p>
-                      </div>
+                      <h4 className="max-w-[18ch] text-[21px]">{item.title}</h4>
                     </div>
                     {/* back */}
-                    <div className="absolute inset-0 flex flex-col justify-between rounded-md border border-accent/40 bg-panel p-6 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className="absolute inset-0 flex flex-col rounded-md border border-accent/40 bg-panel p-6 [backface-visibility:hidden] [transform:rotateY(180deg)]">
                       <span className="flex items-center gap-2.5">
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
                           style={{
-                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)", "var(--accent)"][
-                              i % 4
+                            backgroundColor: ["var(--accent)", "var(--ochre)", "var(--clay)"][
+                              i % 3
                             ],
                           }}
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
                       </span>
-                      <div>
-                        <h4 className="text-[17px]">{item.title}</h4>
-                        <p className="mt-2 text-[14px] leading-[1.65] text-muted-foreground">
-                          {item.body}
-                        </p>
-                      </div>
+                      <h4 className="mt-3 text-[16px]">{item.title}</h4>
+                      <ul className="mt-3 space-y-2.5">
+                        {item.items.map((sub) => (
+                          <li key={sub.label} className="text-[12.5px] leading-[1.55]">
+                            <span className="font-medium">{sub.label}:</span>{" "}
+                            <span className="text-muted-foreground">{sub.text}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </li>
@@ -288,6 +288,7 @@ function Index() {
             </ul>
           </div>
         </section>
+
 
         {/* Projects */}
         <section className="relative border-t border-border">
