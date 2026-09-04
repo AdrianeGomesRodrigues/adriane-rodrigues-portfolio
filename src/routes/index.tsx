@@ -127,10 +127,10 @@ const scope = [
 const projects = [
   {
     n: "01",
-    title: "Case study coming soon",
-    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
-    tags: ["Placeholder", "Placeholder", "Placeholder"],
-    href: GITHUB,
+    title: "Contract Review Skill — MSA · NDA · DPA",
+    body: "An AI skill that reviews commercial contracts against Portuguese law and applicable EU regulation: contract type, summary, the law the object and parties pull in, severity-rated red flags with fixes, and a plain-language read of the clauses doing the most work. Includes three worked examples.",
+    tags: ["Legal Ops", "Portuguese & EU Law", "AI Automation"],
+    href: "https://github.com/AdrianeGomesRodrigues/contract-review-pt",
   },
   {
     n: "02",
