@@ -385,32 +385,10 @@ function Index() {
             <SectionLabel>Contact</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Let's talk.</h3>
             <p className="mb-10 max-w-[52ch] text-[16px] leading-[1.75] text-muted-foreground">
-              Open to Legal Ops, People/HR Operations, and Operations Leadership roles, as well as
-              focused project work. The fastest way to reach me is by email.
+              Email is the fastest way to reach me.
             </p>
 
-            <dl className="grid gap-6 sm:grid-cols-3">
-              <div>
-                <dt className="meta-label text-accent">Email</dt>
-                <dd className="mt-2 text-[15px]">
-                  <a className="link-underline" href={`mailto:${EMAIL}`}>
-                    {EMAIL}
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="meta-label text-accent">LinkedIn</dt>
-                <dd className="mt-2 text-[15px]">
-                  <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
-                    /adrianegrodrigues
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="meta-label text-accent">Based in</dt>
-                <dd className="mt-2 text-[15px] text-muted-foreground">Coimbra, Portugal</dd>
-              </div>
-            </dl>
+
 
             <div className="mt-10">
               <a
