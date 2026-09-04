@@ -127,10 +127,10 @@ const scope = [
 const projects = [
   {
     n: "01",
-    title: "Case study coming soon",
-    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
-    tags: ["Placeholder", "Placeholder", "Placeholder"],
-    href: GITHUB,
+    title: "Contract Review Skill — MSA · NDA · DPA",
+    body: "An AI skill that reviews commercial contracts against Portuguese law and applicable EU regulation: contract type, summary, the law the object and parties pull in, severity-rated red flags with fixes, and a plain-language read of the clauses doing the most work. Includes three worked examples.",
+    tags: ["Legal Ops", "Portuguese & EU Law", "AI Automation"],
+    href: "https://github.com/AdrianeGomesRodrigues/contract-review-pt",
   },
   {
     n: "02",
@@ -236,11 +236,11 @@ function Index() {
               I manage core business functions in-house, designing processes that bring legal precision, financial structure, and technical automation into daily operations.
             </p>
 
-            <ul className="grid gap-4 sm:grid-cols-2">
+            <ul className="grid gap-4">
               {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group h-[310px] [perspective:1200px]"
+                  className="group h-[180px] [perspective:1600px]"
                   tabIndex={0}
                 >
                   <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
@@ -257,10 +257,10 @@ function Index() {
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
                       </span>
-                      <h4 className="max-w-[18ch] text-[21px]">{item.title}</h4>
+                      <h4 className="text-[21px]">{item.title}</h4>
                     </div>
                     {/* back */}
-                    <div className="absolute inset-0 flex flex-col rounded-md border border-accent/40 bg-panel p-6 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className="absolute inset-0 flex flex-col rounded-md border border-accent/40 bg-panel p-5 [backface-visibility:hidden] [transform:rotateY(180deg)]">
                       <span className="flex items-center gap-2.5">
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
@@ -271,11 +271,11 @@ function Index() {
                           }}
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
+                        <span className="text-[13px] font-medium">{item.title}</span>
                       </span>
-                      <h4 className="mt-3 text-[16px]">{item.title}</h4>
-                      <ul className="mt-3 space-y-2.5">
+                      <ul className="mt-2.5 space-y-1.5">
                         {item.items.map((sub) => (
-                          <li key={sub.label} className="text-[12px] leading-[1.5]">
+                          <li key={sub.label} className="text-[12px] leading-[1.45]">
                             <span className="font-medium">{sub.label}:</span>{" "}
                             <span className="text-muted-foreground">{sub.text}</span>
                           </li>
@@ -286,6 +286,7 @@ function Index() {
                 </li>
               ))}
             </ul>
+
           </div>
         </section>
 
@@ -384,32 +385,10 @@ function Index() {
             <SectionLabel>Contact</SectionLabel>
             <h3 className="mb-6 text-[26px] sm:text-[30px]">Let's talk.</h3>
             <p className="mb-10 max-w-[52ch] text-[16px] leading-[1.75] text-muted-foreground">
-              Open to Legal Ops, People/HR Operations, and Operations Leadership roles, as well as
-              focused project work. The fastest way to reach me is by email.
+              Email is the fastest way to reach me.
             </p>
 
-            <dl className="grid gap-6 sm:grid-cols-3">
-              <div>
-                <dt className="meta-label text-accent">Email</dt>
-                <dd className="mt-2 text-[15px]">
-                  <a className="link-underline" href={`mailto:${EMAIL}`}>
-                    {EMAIL}
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="meta-label text-accent">LinkedIn</dt>
-                <dd className="mt-2 text-[15px]">
-                  <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
-                    /adrianegrodrigues
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="meta-label text-accent">Based in</dt>
-                <dd className="mt-2 text-[15px] text-muted-foreground">Coimbra, Portugal</dd>
-              </div>
-            </dl>
+
 
             <div className="mt-10">
               <a
