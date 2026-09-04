@@ -240,7 +240,7 @@ function Index() {
               {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group h-[150px] [perspective:1600px]"
+                  className="group h-[180px] [perspective:1600px]"
                   tabIndex={0}
                 >
                   <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
