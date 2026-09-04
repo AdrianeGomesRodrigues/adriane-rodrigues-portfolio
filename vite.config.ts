@@ -16,7 +16,7 @@ export default defineConfig({
   },
   // Static export for GitHub Pages (no server runtime required).
   nitro: {
-    preset: "static",
+    preset: "github-pages",
   },
   vite: {
     base: BASE,
