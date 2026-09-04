@@ -236,11 +236,11 @@ function Index() {
               I manage core business functions in-house, designing processes that bring legal precision, financial structure, and technical automation into daily operations.
             </p>
 
-            <ul className="grid gap-4 sm:grid-cols-2">
+            <ul className="grid gap-4">
               {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group h-[310px] [perspective:1200px]"
+                  className="group h-[150px] [perspective:1600px]"
                   tabIndex={0}
                 >
                   <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
@@ -257,10 +257,10 @@ function Index() {
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
                       </span>
-                      <h4 className="max-w-[18ch] text-[21px]">{item.title}</h4>
+                      <h4 className="text-[21px]">{item.title}</h4>
                     </div>
                     {/* back */}
-                    <div className="absolute inset-0 flex flex-col rounded-md border border-accent/40 bg-panel p-6 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className="absolute inset-0 flex flex-col rounded-md border border-accent/40 bg-panel p-5 [backface-visibility:hidden] [transform:rotateY(180deg)]">
                       <span className="flex items-center gap-2.5">
                         <span
                           className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]"
@@ -271,11 +271,11 @@ function Index() {
                           }}
                         />
                         <span className="display-index text-muted-foreground">{item.n}</span>
+                        <span className="text-[13px] font-medium">{item.title}</span>
                       </span>
-                      <h4 className="mt-3 text-[16px]">{item.title}</h4>
-                      <ul className="mt-3 space-y-2.5">
+                      <ul className="mt-2.5 space-y-1.5">
                         {item.items.map((sub) => (
-                          <li key={sub.label} className="text-[12px] leading-[1.5]">
+                          <li key={sub.label} className="text-[12px] leading-[1.45]">
                             <span className="font-medium">{sub.label}:</span>{" "}
                             <span className="text-muted-foreground">{sub.text}</span>
                           </li>
@@ -286,6 +286,7 @@ function Index() {
                 </li>
               ))}
             </ul>
+
           </div>
         </section>
 
