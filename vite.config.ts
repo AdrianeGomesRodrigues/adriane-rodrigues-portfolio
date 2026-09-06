@@ -14,10 +14,6 @@ export default defineConfig({
     pages: [{ path: "/" }],
     prerender: { enabled: true, autoStaticPathsDiscovery: false },
   },
-  // Static export for GitHub Pages (no server runtime required).
-  nitro: {
-    preset: "cloudflare-module",
-  },
   vite: {
     base: BASE,
   },
