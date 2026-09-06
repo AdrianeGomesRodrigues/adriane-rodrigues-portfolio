@@ -26,6 +26,4 @@ const csrfMiddleware = createCsrfMiddleware({
 
 export const startInstance = createStart(() => ({
   requestMiddleware: [errorMiddleware, csrfMiddleware],
-  // SPA mode: render the same shell for every route so it can be exported to static GitHub Pages.
-  defaultSsr: false,
 }));
