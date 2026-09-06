@@ -13,6 +13,9 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Prerender the single-page portfolio to static HTML for GitHub Pages.
+    pages: [{ path: "/" }],
+    prerender: { enabled: true, autoStaticPathsDiscovery: false },
   },
   // Static export for GitHub Pages (no server runtime required).
   nitro: {
