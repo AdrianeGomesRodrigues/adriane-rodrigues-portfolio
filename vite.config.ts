@@ -16,7 +16,7 @@ export default defineConfig({
   },
   // Static export for GitHub Pages (no server runtime required).
   nitro: {
-    preset: "cloudflare-pages",
+    preset: "cloudflare-module",
   },
   vite: {
     base: BASE,
