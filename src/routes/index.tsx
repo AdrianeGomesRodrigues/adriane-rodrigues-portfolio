@@ -127,30 +127,22 @@ const scope = [
 const projects = [
   {
     n: "01",
-    title: "Contract Review Skill — MSA · NDA · DPA",
-    body: "An AI skill that reviews commercial contracts against Portuguese law and applicable EU regulation: contract type, summary, the law the object and parties pull in, severity-rated red flags with fixes, and a plain-language read of the clauses doing the most work. Includes three worked examples.",
-    tags: ["Legal Ops", "Portuguese & EU Law", "AI Automation"],
-    href: "https://github.com/AdrianeGomesRodrigues/contract-review-pt",
+    title: "Case study coming soon",
+    href: GITHUB,
   },
   {
     n: "02",
     title: "Case study coming soon",
-    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
-    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "03",
     title: "Case study coming soon",
-    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
-    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
   {
     n: "04",
     title: "Case study coming soon",
-    body: "Placeholder — a short summary of the problem, the system built, and the outcome will live here.",
-    tags: ["Placeholder", "Placeholder", "Placeholder"],
     href: GITHUB,
   },
 ];
@@ -212,7 +204,7 @@ function Index() {
             </h1>
             <WaveRule className="mt-8 h-5 w-[220px] text-accent/70" />
             <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.75] text-muted-foreground">
-              Creating operational frameworks, managing legal and finantial lifecycles, and automating internal systems. I bridge the gaps between Law, Finance, HR, and Tech, picking up whatever each new domain requires, then owning it end to end.
+              Creating operational frameworks, managing legal and financial lifecycles, and automating internal systems. I bridge the gaps between Law, Finance, HR, and Tech, picking up whatever each new domain requires, then owning it end to end.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
@@ -343,9 +335,9 @@ function Index() {
                 apply my legal training directly inside dynamic environments.
               </p>
               <p className="text-muted-foreground">
-                I target Legal Ops, People/HR Operations, and Operations Leadership roles within
-                European technology scale-ups, legal-tech platforms, and software companies that
-                value high autonomy, direct execution, and structural clarity.
+                My focus is on legal, people, and operational systems: building them where they don't
+                yet exist, and improving them where they do. That covers companies at different
+                stages of maturity, from early scale-ups to more established structures.
               </p>
 
             </div>
