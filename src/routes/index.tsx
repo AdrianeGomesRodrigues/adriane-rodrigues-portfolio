@@ -289,7 +289,7 @@ function Index() {
             <SectionLabel>Selected projects &amp; systems</SectionLabel>
             <h3 className="mb-12 text-[26px] sm:text-[30px]">Case studies, in brief.</h3>
             <ul className="grid gap-4 sm:grid-cols-2">
-              {projects.map((p, i) => (
+              {projects.map((p) => (
                 <li key={p.n}>
                   <a
                     href={p.href}
@@ -303,19 +303,6 @@ function Index() {
                     />
                     <span className="display-index relative text-accent">{p.n}</span>
                     <h4 className="relative mt-3 max-w-[24ch] text-[19px]">{p.title}</h4>
-                    <p className="relative mt-3 max-w-[40ch] text-[15px] leading-[1.7] text-muted-foreground">
-                      {p.body}
-                    </p>
-                    <div className="relative mt-5 flex flex-wrap gap-2">
-                      {p.tags.map((t, ti) => (
-                        <span
-                          key={ti}
-                          className="rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.08em] text-muted-foreground"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
                   </a>
                 </li>
               ))}
