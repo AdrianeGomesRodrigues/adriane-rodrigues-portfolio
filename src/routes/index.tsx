@@ -184,7 +184,7 @@ function Index() {
           </span>
 
           <nav className="flex items-center gap-6 text-[14px] text-muted-foreground">
-            <a className="link-underline" href={LINKEDIN} target="_blank" rel="noreferrer">
+            <a className="link-underline" href={LINKEDIN}>
               LinkedIn
             </a>
             <a className="link-underline" href="#contact">
