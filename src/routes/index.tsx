@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
 });
 
 const EMAIL = "adrianegrod@gmail.com";
-const LINKEDIN = "https://www.linkedin.com/in/adrianegrodrigues/";
+const LINKEDIN = "https://www.linkedin.com/in/adriane-gomes-rodrigues/";
 const GITHUB = "https://github.com/adrianegrodrigues";
 
 const scope = [
