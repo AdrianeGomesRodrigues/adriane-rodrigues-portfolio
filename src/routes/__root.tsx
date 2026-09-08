@@ -91,7 +91,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      {
+        rel: "icon",
+        href: `${import.meta.env.BASE_URL}favicon.png`,
+        type: "image/png",
+        sizes: "64x64",
+      },
+      {
+        rel: "shortcut icon",
+        href: `${import.meta.env.BASE_URL}favicon.png`,
+        type: "image/png",
+      },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
