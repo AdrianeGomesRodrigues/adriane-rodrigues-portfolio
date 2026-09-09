@@ -127,8 +127,11 @@ const scope = [
 const projects = [
   {
     n: "01",
-    title: "Case study coming soon",
-    href: GITHUB,
+    title: "Contract Review Skill — MSA · NDA · DPA",
+    href: "https://github.com/AdrianeGomesRodrigues/contract-review-pt",
+    description:
+      "A Claude skill that reviews commercial contracts against Portuguese law and EU regulations. It surfaces red flags and gives plain-language fixes for MSAs, NDAs, and DPAs.",
+    tags: ["Legal Ops", "Portuguese & EU Law", "AI Automation"],
   },
   {
     n: "02",
