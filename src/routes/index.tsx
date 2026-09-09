@@ -127,8 +127,11 @@ const scope = [
 const projects = [
   {
     n: "01",
-    title: "Case study coming soon",
-    href: GITHUB,
+    title: "Contract Review Skill — MSA · NDA · DPA",
+    href: "https://github.com/AdrianeGomesRodrigues/contract-review-pt",
+    description:
+      "A Claude skill that reviews commercial contracts against Portuguese law and EU regulations. It surfaces red flags and gives plain-language fixes for MSAs, NDAs, and DPAs.",
+    tags: ["Legal Ops", "Portuguese & EU Law", "AI Automation"],
   },
   {
     n: "02",
@@ -303,6 +306,23 @@ function Index() {
                     />
                     <span className="display-index relative text-accent">{p.n}</span>
                     <h4 className="relative mt-3 max-w-[24ch] text-[19px]">{p.title}</h4>
+                    {p.description && (
+                      <p className="relative mt-2 max-w-[34ch] text-[14px] leading-[1.6] text-muted-foreground">
+                        {p.description}
+                      </p>
+                    )}
+                    {p.tags && p.tags.length > 0 && (
+                      <div className="relative mt-4 flex flex-wrap gap-2">
+                        {p.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-border px-2.5 py-1 text-[11px] text-muted-foreground"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </a>
                 </li>
               ))}
