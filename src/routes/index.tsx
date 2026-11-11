@@ -9,9 +9,9 @@ import {
   WaveRule,
 } from "../components/shapes";
 
-const TITLE = "Adriane Rodrigues — Operations, Legal & Process Design";
+const TITLE = "Adriane Rodrigues — Legal & People Operations";
 const DESCRIPTION =
-  "Cross-functional operations leader bridging law, tech execution, and business systems. Contract lifecycles, EU funding, HR frameworks, and workflow automation.";
+  "Legally trained operations professional working across Legal Operations, People Operations and process automation: contracts, compliance, HR operations and AI-assisted workflows.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,98 +29,73 @@ export const Route = createFileRoute("/")({
 
 const EMAIL = "adrianegrod@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/adriane-gomes-rodrigues/";
-const GITHUB = "https://github.com/adrianegrodrigues";
+const GITHUB = "https://github.com/AdrianeGomesRodrigues";
 
 const scope = [
   {
     n: "01",
-    title: "Legal & Regulatory",
+    title: "Legal Operations & Compliance",
     items: [
       {
-        label: "Contract Lifecycle Management",
-        text: "End-to-end review, drafting, and negotiation of commercial contracts, such as MSAs, NDAs, DPAs, and SOWs.",
+        label: "Contract Lifecycle",
+        text: "Review, drafting and negotiation support for commercial contracts: MSAs, NDAs, DPAs and SOWs.",
       },
       {
-        label: "Compliance & Governance",
-        text: "GDPR implementation across HR and client workflows; cross-jurisdictional risk monitoring and compliance with relevant regulations and laws.",
+        label: "Compliance by Design",
+        text: "GDPR across HR and client workflows, EU AI Act readiness, and Portuguese tax and labour requirements built into day-to-day processes.",
       },
       {
-        label: "Workflow Standardization",
-        text: "Creating repeatable contract intake, approval, and repository systems to eliminate legal bottlenecks.",
+        label: "Legal Workflows",
+        text: "Repeatable contract intake, approval and repository systems that remove legal bottlenecks.",
       },
     ],
   },
   {
     n: "02",
-    title: "Public & EU Funding",
+    title: "People Operations",
     items: [
       {
-        label: "Grant Lifecycle Execution",
-        text: "Full end-to-end management of public grants.",
+        label: "Employee Lifecycle",
+        text: "Recruitment, onboarding and offboarding processes, designed end to end.",
       },
       {
-        label: "In-House Operation",
-        text: "Handling eligibility assessments, technical applications, and reporting.",
+        label: "Labour Compliance",
+        text: "HR workflows aligned with Portuguese labour law and the applicable collective agreement for the IT sector.",
       },
       {
-        label: "Audit Readiness",
-        text: "Structuring compliance and documentation frameworks to meet strict public audit requirements.",
+        label: "People Systems",
+        text: "HR records, leave management and employee documentation workflows.",
       },
     ],
   },
   {
     n: "03",
-    title: "People & HR Operations",
+    title: "Process Optimisation & AI",
     items: [
       {
-        label: "Full-Lifecycle HR Administration",
-        text: "Managing end-to-end recruitment, technical onboarding, offboarding, and talent operations.",
+        label: "Process Design",
+        text: "Clear, enforceable SOPs that connect Legal, People and Operations.",
       },
       {
-        label: "Labor Compliance",
-        text: "Aligning internal HR workflows with labor legislation and tech-sector regulations.",
+        label: "AI & No-Code Automation",
+        text: "Make, Google Apps Script and Claude skills; by my own estimate, approximately 40% less time spent on manual and repetitive tasks.",
       },
       {
-        label: "People Systems & Infrastructure",
-        text: "Structuring HR databases, leave management, and employee documentation workflows.",
+        label: "Tooling",
+        text: "Jira, Notion and workspace environments structured for cross-functional coordination.",
       },
     ],
   },
+];
+
+const alsoOwned = [
   {
-    n: "04",
+    title: "Public & EU Funding",
+    text: "Grant lifecycle from eligibility to reporting, with audit-ready documentation; a funding-screening bot I built reclaims about a day a week.",
+  },
+  {
     title: "Finance & Tax Operations",
-    items: [
-      {
-        label: "Financial Oversight & Budgeting",
-        text: "Direct ownership of company budgeting, budget control, and ongoing cash-flow tracking.",
-      },
-      {
-        label: "Accounting & Fiscal Compliance",
-        text: "Partnering directly with external accounting to ensure full tax and fiscal compliance under Portuguese and European regulations.",
-      },
-      {
-        label: "Operational Invoicing & Accounts",
-        text: "Managing invoice lifecycles, accounts management, and financial reporting across projects.",
-      },
-    ],
-  },
-  {
-    n: "05",
-    title: "Process Systems & Internal Automation",
-    items: [
-      {
-        label: "Operational SOP Architecture",
-        text: "Designing clear, enforceable operational guidelines across cross-functional teams.",
-      },
-      {
-        label: "Practical AI & No-Code Automation",
-        text: "Deploying Make, Google Apps Script, and LLM prompts to automate manual tasks.",
-      },
-      {
-        label: "Tooling Management",
-        text: "Structuring Jira, Notion, and workspace environments for cross-functional delivery and coordination.",
-      },
-    ],
+    text: "Budgeting, cash-flow tracking and coordination with external accountants.",
   },
 ];
 
@@ -130,35 +105,23 @@ const projects = [
     title: "Contract Review Skill — MSA · NDA · DPA",
     href: "https://github.com/AdrianeGomesRodrigues/contract-review-pt",
     description:
-      "A Claude skill that reviews commercial contracts against Portuguese law and EU regulations. It surfaces red flags and gives plain-language fixes for MSAs, NDAs, and DPAs.",
+      "A portfolio project: a Claude skill that reviews commercial contracts against Portuguese law and EU regulation, flags red flags and suggests plain-language fixes for MSAs, NDAs and DPAs. Tested on worked examples.",
     tags: ["Legal Ops", "Portuguese & EU Law", "AI Automation"],
   },
-  {
-    n: "02",
-    title: "Case study coming soon",
-    href: GITHUB,
-  },
-  {
-    n: "03",
-    title: "Case study coming soon",
-    href: GITHUB,
-  },
-  {
-    n: "04",
-    title: "Case study coming soon",
-    href: GITHUB,
-  },
 ];
-
 
 const trajectory = [
   { period: "2016 – 2021", title: "LLB in Law", place: "University of Coimbra" },
   {
     period: "2021 – 2023",
-    title: "LLM, Business & Corporate Law",
-    place: "Thesis: Blockchain & Intellectual Property",
+    title: "LLM in Business Law",
+    place: "University of Coimbra · Thesis: Blockchain & Intellectual Property",
   },
-  { period: "2021 – Present", title: "Operations Manager", place: "Deemaze Software" },
+  {
+    period: "2021 – Present",
+    title: "Operations Manager (Legal, People & Finance Operations)",
+    place: "Deemaze Software · B2B software development agency",
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -182,6 +145,9 @@ function Index() {
             <a className="link-underline" href={LINKEDIN}>
               LinkedIn
             </a>
+            <a className="link-underline" href={GITHUB}>
+              GitHub
+            </a>
             <a className="link-underline" href="#contact">
               Contact
             </a>
@@ -196,9 +162,9 @@ function Index() {
           <HeroCollage className="pointer-events-none absolute right-16 top-20 hidden h-[300px] w-[320px] xl:block" />
           <BlobCutout className="drift-medium pointer-events-none absolute left-4 bottom-6 hidden h-[200px] w-[200px] text-clay/25 lg:block" />
           <div className="container-editorial section-y relative">
-            <p className="meta-label mb-6 text-accent">— Law · People · Business Operations</p>
+            <p className="meta-label mb-6 text-accent">— Legal Operations · People Operations · Process &amp; AI</p>
             <h1 className="max-w-[24ch] text-[34px] leading-[1.06] sm:text-[46px]">
-              Building the cross-functional systems that let tech companies scale{" "}
+              Building the legal and people systems that let tech companies scale{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">cleanly</span>
                 <span className="absolute inset-x-0 bottom-[0.12em] z-0 h-[0.28em] bg-ochre/55" />
@@ -207,7 +173,9 @@ function Index() {
             </h1>
             <WaveRule className="mt-8 h-5 w-[220px] text-accent/70" />
             <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.75] text-muted-foreground">
-              Creating operational frameworks, managing legal and financial lifecycles, and automating internal systems. I bridge the gaps between Law, Finance, HR, and Tech, picking up whatever each new domain requires, then owning it end to end.
+              Legally trained (LLB + LLM) and working in-house at a B2B software company, I design
+              contract, compliance and HR processes that are compliant by design, then streamline
+              them with automation and AI.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
@@ -226,16 +194,17 @@ function Index() {
           <ArcLines className="drift-sway pointer-events-none absolute right-16 top-16 hidden h-[120px] w-[120px] text-clay/45 lg:block" />
           <div className="container-editorial section-y relative z-10">
             <SectionLabel>What I do</SectionLabel>
-            <h3 className="mb-6 text-[26px] sm:text-[30px]">Five domains, one owner.</h3>
+            <h3 className="mb-6 text-[26px] sm:text-[30px]">Legal and People Ops, connected by process.</h3>
             <p className="mb-12 max-w-[58ch] text-[16px] leading-[1.75] text-muted-foreground">
-              I manage core business functions in-house, designing processes that bring legal precision, financial structure, and technical automation into daily operations.
+              Legal precision applied to the systems a company runs on every day: its contracts, its
+              people processes, and the workflows that connect them.
             </p>
 
             <ul className="grid gap-4">
               {scope.map((item, i) => (
                 <li
                   key={item.n}
-                  className="group h-[180px] [perspective:1600px]"
+                  className="group h-[270px] sm:h-[190px] [perspective:1600px]"
                   tabIndex={0}
                 >
                   <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
@@ -282,6 +251,17 @@ function Index() {
               ))}
             </ul>
 
+            <div className="mt-12">
+              <p className="meta-label mb-4 text-muted-foreground">Also owned</p>
+              <ul className="grid gap-4 sm:grid-cols-2">
+                {alsoOwned.map((a) => (
+                  <li key={a.title} className="rounded-md border border-border bg-background p-5">
+                    <h4 className="text-[16px]">{a.title}</h4>
+                    <p className="mt-1.5 text-[14px] leading-[1.6] text-muted-foreground">{a.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -290,8 +270,8 @@ function Index() {
         <section className="relative border-t border-border">
           <div className="container-editorial section-y relative">
             <SectionLabel>Selected projects &amp; systems</SectionLabel>
-            <h3 className="mb-12 text-[26px] sm:text-[30px]">Case studies, in brief.</h3>
-            <ul className="grid gap-4 sm:grid-cols-2">
+            <h3 className="mb-12 text-[26px] sm:text-[30px]">Selected work.</h3>
+            <ul className="grid max-w-[640px] gap-4">
               {projects.map((p) => (
                 <li key={p.n}>
                   <a
@@ -307,7 +287,7 @@ function Index() {
                     <span className="display-index relative text-accent">{p.n}</span>
                     <h4 className="relative mt-3 max-w-[24ch] text-[19px]">{p.title}</h4>
                     {p.description && (
-                      <p className="relative mt-2 max-w-[34ch] text-[14px] leading-[1.6] text-muted-foreground">
+                      <p className="relative mt-2 max-w-[52ch] text-[14px] leading-[1.6] text-muted-foreground">
                         {p.description}
                       </p>
                     )}
@@ -337,14 +317,15 @@ function Index() {
             <SectionLabel>About</SectionLabel>
             <div className="max-w-[62ch] space-y-5 text-[16px] leading-[1.8]">
               <p>
-                I am a generalist operator based in Portugal with a formal legal background (LLB and
-                LLM in Corporate Law). Rather than practicing in a traditional law firm, I chose to
-                apply my legal training directly inside dynamic environments.
+                I'm legally trained (LLB and LLM in Business Law, University of Coimbra) and work
+                in-house as a jurista. Rather than traditional legal practice, I chose to apply that
+                training inside a tech company, where legal thinking shapes how work actually gets done.
               </p>
               <p className="text-muted-foreground">
-                My focus is on legal, people, and operational systems: building them where they don't
-                yet exist, and improving them where they do. That covers companies at different
-                stages of maturity, from early scale-ups to more established structures.
+                My work sits between Legal, People and Operations: contracts and compliance, the
+                employee lifecycle, and the processes that connect them. I build these systems where
+                they don't yet exist and improve them where they do, with a growing share of
+                automation and AI.
               </p>
 
             </div>
